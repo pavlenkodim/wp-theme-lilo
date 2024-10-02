@@ -35,6 +35,10 @@ footer {
   z-index: 111;
 }
 
+.on_home {
+  text-align: end;
+}
+
 .background {
   position: relative;
   width: 100%;
@@ -48,6 +52,14 @@ footer {
   width: 65vw; /* Размер изображений можно настроить по необходимости */
   height: auto; /* Автоматически подстраиваем высоту */
   z-index: 1; /* Изображение будет под контентом */
+}
+
+.woman {
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+.woman:hover {
+  opacity: 1;
 }
 
 .menu-container {
