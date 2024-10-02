@@ -1,0 +1,188 @@
+body {
+  height: 100vh;
+  background: #0b0a0c;
+  color: #fff;
+  font-family: Montserrat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h1 {
+  font-family: Unbounded;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+h2 {
+  font-family: Unbounded;
+}
+h3 {
+  font-family: Unbounded;
+}
+
+header {
+  position: relative;
+  z-index: 222;
+}
+footer {
+  position: relative;
+  z-index: 222;
+}
+.container {
+  margin-top: 28px;
+  z-index: 111;
+}
+
+.background {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+.background-img,
+.overlay-img {
+  position: fixed; /* Фиксируем картинки относительно окна браузера */
+  bottom: 0; /* Приклеиваем к нижнему краю */
+  right: 0; /* Приклеиваем к правому краю */
+  width: 65vw; /* Размер изображений можно настроить по необходимости */
+  height: auto; /* Автоматически подстраиваем высоту */
+  z-index: 1; /* Изображение будет под контентом */
+}
+
+.menu-container {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+
+  @media screen and (max-width: 400px) {
+    font-size: 10px;
+  }
+}
+
+.menu-container div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  padding-top: 20px;
+}
+.menu-container div span {
+  padding-bottom: 10px;
+  @media screen and (max-width: 990px) {
+    display: none;
+  }
+}
+
+.logo {
+  padding-bottom: 10px;
+  @media screen and (max-width: 550px) {
+    padding: 0;
+  }
+}
+
+.logo svg {
+  @media screen and (max-width: 550px) {
+    width: 100px;
+  }
+  @media screen and (max-width: 400px) {
+    width: 70px;
+  }
+}
+
+.back-to-main {
+  text-decoration: none;
+  color: #fff;
+  text-align: right;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+}
+
+.back-to-main span {
+  @media screen and (max-width: 990px) {
+    display: none;
+  }
+}
+
+.back-to-main:hover {
+  text-decoration: underline;
+}
+
+.content-main {
+  max-width: 700px;
+}
+.content-main-big-logo {
+  margin-bottom: 46px;
+}
+.content-main-dots {
+  margin-bottom: 37px;
+}
+.main-content-text {
+}
+.main-content-text a {
+  text-decoration: none;
+}
+
+#follow_new_client {
+  color: #8f44ff;
+}
+#cooperate_with_sreemers {
+  color: #168fff;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 100px 30px 30px;
+}
+.menu {
+  width: 185px;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 32px;
+  background: #23014e;
+}
+.menu-btn {
+  margin: 10px 20px;
+  background: none;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+}
+.menu-btn svg {
+  height: 20px;
+  width: 10px;
+}
+.menu-counter {
+  text-align: center;
+  font-size: 32px;
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 19px;
+  flex-direction: row;
+}
+.nav-link {
+  color: #fff;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.nav-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+.navbar-text {
+  color: #fff;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
