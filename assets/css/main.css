@@ -23,43 +23,18 @@ h3 {
 }
 
 header {
-  position: relative;
-  z-index: 222;
+  z-index: 1201;
 }
 footer {
-  position: relative;
-  z-index: 222;
+  z-index: 1200;
 }
 .container {
   margin-top: 28px;
-  z-index: 111;
+  z-index: 1200;
 }
 
 .on_home {
   text-align: end;
-}
-
-.background {
-  position: relative;
-  width: 100%;
-  z-index: 1;
-}
-.background-img,
-.overlay-img {
-  position: fixed; /* Фиксируем картинки относительно окна браузера */
-  bottom: 0; /* Приклеиваем к нижнему краю */
-  right: 0; /* Приклеиваем к правому краю */
-  width: 65vw; /* Размер изображений можно настроить по необходимости */
-  height: auto; /* Автоматически подстраиваем высоту */
-  z-index: 1; /* Изображение будет под контентом */
-}
-
-.woman {
-  opacity: 0.5;
-  transition: opacity 0.3s ease;
-}
-.woman:hover {
-  opacity: 1;
 }
 
 .menu-container {
@@ -103,6 +78,7 @@ footer {
 }
 
 .back-to-main {
+  z-index: 1200;
   text-decoration: none;
   color: #fff;
   text-align: right;
@@ -142,6 +118,10 @@ footer {
 }
 #cooperate_with_sreemers {
   color: #168fff;
+}
+
+.container-xxl {
+  max-width: none;
 }
 
 .footer-container {
