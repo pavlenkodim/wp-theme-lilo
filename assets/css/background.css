@@ -27,12 +27,93 @@ img {
   right: 0;
   z-index: 1;
 }
-
+#shadow_purp_opasity {
+  height: 100vh;
+  bottom: 0;
+  right: 0;
+}
 #shadow_blue {
   height: 100vh;
   bottom: 0;
   left: 0;
   z-index: 1;
+}
+#shadow_blue_opasity {
+  height: 100vh;
+  bottom: 0;
+  left: 0;
+}
+
+.smoke {
+  z-index: 1;
+}
+.smoke-purp {
+  right: 0;
+  bottom: 0;
+}
+.smoke-blue {
+  left: 0;
+  bottom: 0;
+}
+.smoke-top {
+  top: 0 !important;
+}
+#smoke_purp_top_1 {
+  top: 0;
+}
+#smoke_purp_top_2 {
+  top: 0;
+  right: 0;
+}
+#smoke_blue_left_1 {
+  left: 0;
+}
+#smoke_blue_bottom_2 {
+  bottom: 0;
+}
+#smoke_blue_bottom_3 {
+  bottom: 0;
+  left: 0;
+}
+#smoke_blue_bottom_4 {
+  left: 0;
+  bottom: 0;
+}
+#smoke_blue_left_5 {
+  left: 0;
+  bottom: 0;
+}
+#smoke_purp_right_3 {
+  right: 0;
+  bottom: 0;
+}
+#smoke_purp_right_4 {
+  right: 0;
+  bottom: 0;
+}
+#smoke_purp_bottom_5 {
+  bottom: 0;
+  right: 0;
+}
+#smoke_purp_bottom_6 {
+  bottom: 0;
+  right: 0;
+}
+#smoke_purp_top_7 {
+  top: 0;
+  right: 0;
+}
+#smoke_purp_right_8 {
+  top: 0;
+  right: 0;
+}
+#smoke_purp_right_9 {
+  top: 0;
+  right: 0;
+}
+#smoke_purp_right_10 {
+  bottom: 0;
+  right: 0;
 }
 
 .woman {
