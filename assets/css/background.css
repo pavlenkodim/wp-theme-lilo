@@ -9,8 +9,7 @@
   z-index: -1;
   pointer-events: none;
 }
-.background_smoke svg,
-img {
+.background_smoke img {
   position: fixed;
   z-index: -1;
 }
@@ -114,21 +113,4 @@ img {
 #smoke_purp_right_10 {
   bottom: 0;
   right: 0;
-}
-
-.woman {
-  width: 60vw;
-  height: auto;
-  opacity: 0.5;
-  transition: opacity 0.3s ease;
-  background-image: url(/assets/images/woman_vr.png);
-}
-.woman_blure {
-  background-image: url(/assets/images/woman_vr_blure.png);
-  width: 60vw;
-  height: auto;
-}
-
-.woman:hover {
-  opacity: 1;
 }

@@ -1,12 +1,12 @@
 <?php
 
-function wplilo_setup () {
-  load_theme_textdomain('wplilo');
-  load_theme_support('title-tag');
-  load_theme_support('custom_logo');
-}
+// function wplilo_setup () {
+//   load_theme_textdomain('wplilo');
+//   load_theme_support('title-tag');
+//   load_theme_support('custom_logo');
+// }
 
-add_action('after_setup_theme', 'wplilo_setup')
+// add_action('after_setup_theme', 'wplilo_setup');
 
 function wplilo_scripts() {
   wp_enqueue_style('bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css');
