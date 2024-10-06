@@ -121,8 +121,10 @@ img {
   height: auto;
   opacity: 0.5;
   transition: opacity 0.3s ease;
+  background-image: url(/assets/images/woman_vr.png);
 }
 .woman_blure {
+  background-image: url(/assets/images/woman_vr_blure.png);
   width: 60vw;
   height: auto;
 }
