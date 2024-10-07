@@ -1,0 +1,141 @@
+:root {
+  --index: calc(1vw + 1vh);
+  --gutter: 30px;
+  --side-small: 26;
+  --side-big: 20;
+  --depth: 108vw;
+  --transition: 0.75s cubic-bezier(0.075, 0.5, 0, 1);
+}
+
+/* Ð¡ÐºÑ€Ñ‹Ð²Ð°ÐµÐ¼ Scrollbar */
+body {
+  scrollbar-width: none; /* Firefox */
+}
+body::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.dev {
+  transform-style: preserve-3d;
+  height: 100%;
+}
+.frame {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition), opacity 0.75s ease;
+  will-change: transform;
+  transform-style: preserve-3d;
+}
+.frame h2 {
+  text-align: center;
+  font-size: calc(var(--index) * 2.6);
+  font-family: "Orbitron";
+  color: #fff;
+  font-weight: 400;
+}
+.frame-media {
+  position: relative;
+  width: calc(var(--index) * var(--side-small));
+  height: calc(var(--index) * var(--side-big));
+  background-position: center;
+  background-size: cover;
+}
+
+.frame-media img,
+.frame-media video {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.frame-media_left {
+  right: calc(var(--side-small) / 2 * var(--index) + var(--gutter));
+  width: 35vw;
+}
+.frame-media_right {
+  left: calc(var(--side-small) / 2 * var(--index) + var(--gutter));
+  width: 50vw;
+}
+/*.frame_bg {
+	background-color: rgb(0 0 0 / .87);
+}*/
+.text-right > * {
+  position: relative;
+  left: 18vw;
+}
+.text-left > * {
+  position: relative;
+  right: 18vw;
+}
+.frame h3 {
+  font-family: "Orbitron";
+  font-size: calc(var(--index) * 2);
+  color: #fff;
+  font-weight: 400;
+}
+.frame p {
+  max-width: 30vw;
+  margin-top: 5vh;
+  color: #fff;
+}
+.soundbutton {
+  position: fixed;
+  bottom: 5vh;
+  right: 5vw;
+  cursor: pointer;
+  width: 24px;
+  transition: 0.25s ease;
+}
+.soundbutton.paused {
+  opacity: 0.25;
+}
+
+.frame--1 {
+}
+
+.frame--2 {
+}
+
+.frame--3 {
+}
+
+.frame--4 {
+}
+
+.frame--5 {
+}
+
+.frame--5 .frame__content {
+  width: 24vw;
+}
+
+.frame--6 {
+}
+
+.frame--7 .frame__content {
+  width: 53vw;
+}
+
+.frame--7 h3 {
+  font-size: calc(var(--index) * 2);
+}
+.frame--7 .text-right > * {
+  left: 23vw;
+}
+.frame--7 p {
+  max-width: 37vw;
+  margin-top: 5vh;
+}
+
+.frame--8 .frame-media_left {
+  right: calc(var(--side-small) / 1.6 * var(--index) + var(--gutter));
+}
