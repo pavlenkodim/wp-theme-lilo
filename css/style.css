@@ -6525,3 +6525,8 @@ body p.stats__desc--2 {
   height: 25vh;
   object-fit: contain;
 }
+
+.our_network__wrapper {
+  flex-direction: row;
+  justify-content: space-between;
+}

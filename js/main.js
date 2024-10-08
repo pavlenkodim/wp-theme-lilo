@@ -42,11 +42,8 @@ $(document).ready(function () {
   // Chenge title on slide
   function chengeTitle(active) {
     let title = $(".title__head")[0];
-    console.log(active);
-
     title.textContent = TITLES[active - 1];
   }
-  chengeTitle();
 
   //Удаление активного элемента в рамках селектора
   function RemoveActive(a) {

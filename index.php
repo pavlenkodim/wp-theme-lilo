@@ -91,12 +91,42 @@ Template Post Type: page
         <div class="background"></div>
       </div>
     </section>
-    <section class="section section_2" data-slide="3">
-      <div class="wrapper mobile_video__wrapper">
-        
+    <section class="section section_3" data-slide="3">
+      <div class="wrapper our_network__wrapper">
+        <div>
+          <div>
+            Стримеры подключаются к сети для <b>быстрого старта</b>
+          </div>
+          <hr>
+          <div>
+            <div>
+              <h4>
+                33 млн+
+              </h4>
+              <p>
+                охват
+              </p>
+            </div>
+            <div>
+              <h4>МЖ 20-55+</h4>
+              <p>
+                аудитория
+              </p>
+            </div>
+            <div>
+              <h4>500+</h4>
+              <p>
+                паблишеров
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <video src="" alt="">
+        </div>
       </div>
     </section>
-    <section class="section section_3" data-slide="4">
+    <section class="section section_4" data-slide="4">
       <div class="wrapper optimization__wrapper">
         
       </div>
