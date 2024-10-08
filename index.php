@@ -122,7 +122,7 @@ Template Post Type: page
           </div>
         </div>
         <div>
-          <video class="streem_3" src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s3.mp4" alt="">
+          <video class="streem_3" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s3.mp4" > </video>
         </div>
       </div>
       <div class="background">
@@ -130,9 +130,32 @@ Template Post Type: page
         <img class="girl_streem" src="<?php echo get_stylesheet_directory_uri(); ?>/img/girl3.png" alt="">
       </div>
     </section>
-    <section class="section section_4" data-slide="4">
+    <section class="section" data-slide="4">
       <div class="wrapper optimization__wrapper">
-        
+        <div class="section_4">
+          <video class="streem_4" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s4.mp4" > </video>
+          <div class="section4__info__wrapper">
+            <h2 class="section4__title">Пребывание в топе</h2>
+            <p class="section4__description">Повышенное внимание со стороны зрителей</p>
+            <div class="section4__card">
+              <div class="big_title">
+                80% зрителей
+              </div>
+              <div class="card_subtitle">
+                Выбирают трансляцию которая находится в топе
+              </div>
+            </div>
+            <div class="section4__card">
+              <div class="big_title">
+                1% зрителей
+              </div>
+              <div class="card_subtitle">
+                Совершают переход с рекламного креатива на продукт
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
     <section class="section section_9" data-slide="5">

@@ -3420,9 +3420,9 @@ body .wpcf7-response-output {
   z-index: 10;
 }
 
-.section_4 img {
+/* .section_4 img {
   max-height: 75vh;
-}
+} */
 
 /* .section_3 img {
   max-height: 74vh;
@@ -6574,4 +6574,13 @@ body p.stats__desc--2 {
   border: 0.769px solid rgba(255, 255, 255, 0.3);
   padding: 1.75vh 0.75vw;
   width: 7.25vw;
+}
+
+.section_4 {
+  display: flex;
+}
+
+.streem_4 {
+  width: 65vw;
+  height: 65vh;
 }
