@@ -25,13 +25,13 @@ $(document).ready(function () {
 
     switch (activeSlide.attributes["data-slide"].value) {
       case "1":
-        $(".logo__wrapper-unstable").css({ display: "none" });
+        $(".logo__wrapper-unstable").css({ opacity: 0 });
         break;
       case "11":
-        $(".logo__wrapper-unstable").css({ display: "none" });
+        $(".logo__wrapper-unstable").css({ opacity: 0 });
         break;
       default:
-        $(".logo__wrapper-unstable").css({ display: "flex" });
+        $(".logo__wrapper-unstable").css({ opacity: 1 });
         break;
     }
 

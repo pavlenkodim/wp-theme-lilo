@@ -3396,7 +3396,7 @@ body .wpcf7-response-output {
 }
 
 .section {
-  min-height: 99vh;
+  min-height: 100vh;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -3424,9 +3424,9 @@ body .wpcf7-response-output {
   max-height: 75vh;
 }
 
-.section_3 img {
+/* .section_3 img {
   max-height: 74vh;
-}
+} */
 
 .section_8 img {
   max-height: 75vh;
@@ -6405,6 +6405,7 @@ body p.stats__desc--2 {
   padding-top: 1.5vw;
   font-size: 2.5em;
   color: #ffffff;
+  transition-duration: 0.63s;
 }
 #follow_new_client {
   color: #8f44ff;
@@ -6529,4 +6530,48 @@ body p.stats__desc--2 {
 .our_network__wrapper {
   flex-direction: row;
   justify-content: space-between;
+  align-items: start;
+}
+
+.bg_sky {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  height: 100vh;
+  width: 70vw;
+}
+
+.streem_3 {
+  width: 50vw;
+  height: 50vh;
+}
+
+.girl_streem {
+  position: fixed;
+  left: 5vw;
+  bottom: 0;
+  z-index: 1;
+  height: 52vh;
+  width: 40vw;
+}
+
+.section_3__info {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4vh;
+}
+.section_3__info hr {
+  border: 0.769px solid rgba(255, 255, 255, 0.3);
+  width: 100%;
+}
+.section_3__blocks {
+  display: flex;
+  justify-content: space-between;
+}
+.block3__wrapper {
+  border-radius: 9.229px;
+  border: 0.769px solid rgba(255, 255, 255, 0.3);
+  padding: 1.75vh 0.75vw;
+  width: 7.25vw;
 }

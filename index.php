@@ -28,17 +28,17 @@ Template Post Type: page
             </p>
           </div>
         </div>
+        <img
+          class="background-img woman_vr_blure"
+          src="<?php echo get_stylesheet_directory_uri(); ?>/img/woman_vr_blure.png"
+          alt="blure"
+        />
+        <img
+          class="background-img woman_vr"
+          src="<?php echo get_stylesheet_directory_uri(); ?>/img/woman_vr.png"
+          alt="woman wearing vr glasses gaming"
+        />
         <div class="background">
-          <img
-            class="background-img woman_vr_blure"
-            src="<?php echo get_stylesheet_directory_uri(); ?>/img/woman_vr_blure.png"
-            alt="blure"
-          />
-          <img
-            class="background-img woman_vr"
-            src="<?php echo get_stylesheet_directory_uri(); ?>/img/woman_vr.png"
-            alt="woman wearing vr glasses gaming"
-          />
         </div>
         <div class="background_smoke">
           <img id="shadow_purp" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_purp.svg" alt="" />
@@ -93,13 +93,13 @@ Template Post Type: page
     </section>
     <section class="section section_3" data-slide="3">
       <div class="wrapper our_network__wrapper">
-        <div>
+        <div class="section_3__info">
           <div>
             Стримеры подключаются к сети для <b>быстрого старта</b>
           </div>
           <hr>
-          <div>
-            <div>
+          <div class="section_3__blocks">
+            <div class="block3__wrapper">
               <h4>
                 33 млн+
               </h4>
@@ -107,13 +107,13 @@ Template Post Type: page
                 охват
               </p>
             </div>
-            <div>
+            <div class="block3__wrapper">
               <h4>МЖ 20-55+</h4>
               <p>
                 аудитория
               </p>
             </div>
-            <div>
+            <div class="block3__wrapper">
               <h4>500+</h4>
               <p>
                 паблишеров
@@ -122,8 +122,12 @@ Template Post Type: page
           </div>
         </div>
         <div>
-          <video src="" alt="">
+          <video class="streem_3" src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s3.mp4" alt="">
         </div>
+      </div>
+      <div class="background">
+        <img class="bg_sky" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg3.png" alt="">
+        <img class="girl_streem" src="<?php echo get_stylesheet_directory_uri(); ?>/img/girl3.png" alt="">
       </div>
     </section>
     <section class="section section_4" data-slide="4">
