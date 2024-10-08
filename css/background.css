@@ -13,7 +13,7 @@
   z-index: -1;
 }
 .background_smoke {
-  position: relative;
+  position: fixed;
   width: 100%;
   z-index: -1;
   pointer-events: none;
@@ -56,4 +56,11 @@
   left: 0;
   z-index: 1;
   opacity: 0.5;
+}
+.bg {
+  z-index: -1;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
 }

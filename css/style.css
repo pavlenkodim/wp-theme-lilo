@@ -6537,9 +6537,9 @@ body p.stats__desc--2 {
   position: fixed;
   right: 0;
   bottom: 0;
-  z-index: 1;
+  z-index: -1;
   height: 100vh;
-  width: 70vw;
+  width: 100vw;
 }
 
 .streem_3 {

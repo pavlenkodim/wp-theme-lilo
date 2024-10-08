@@ -130,10 +130,10 @@ Template Post Type: page
         </div>
       </div>
       <div class="background">
-        <img class="bg_sky" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg3.png" alt="">
         <img class="girl_streem" src="<?php echo get_stylesheet_directory_uri(); ?>/img/girl3.png" alt="">
       </div>
       <div class="background_smoke">
+        <img class="bg_sky" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg3.png" alt="">
           <img id="shadow_purp" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_purp.svg" alt="" />
           <img id="shadow_blue" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_blue.svg" alt="" />
         </div>
@@ -167,8 +167,7 @@ Template Post Type: page
 
         </div>
         <div class="background_smoke">
-          <img id="shadow_purp" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_purp.svg" alt="" />
-          <img id="shadow_blue" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_blue.svg" alt="" />
+          <img class="bg" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg4.png" alt="" />
         </div>
       </div>
     </section>
