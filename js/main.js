@@ -1,16 +1,52 @@
 $(document).ready(function () {
+  const TITLES = [
+    "Lilo",
+    "Платформы",
+    "Наша сеть",
+    "Стример получает",
+    "Контент всегда в топе",
+    "Преимущества работы с лило",
+    "Форматы (Bar in video)",
+    "Форматы (Overlay banner)",
+    "Форматы (Banner)",
+    "Что нужно для запуска?",
+    "Запуск",
+  ];
+
   // remove logo in head
-  // $(".section").each(function () {
-  //   const activeSlide = $(this).context;
-  //   if (
-  //     activeSlide.className.includes("active") &&
-  //     activeSlide.attributes["data-slide"].value == 1
-  //   ) {
-  //     $(".logo__wrapper-unstable").css({ opacity: "0" });
-  //   } else {
-  //     $(".logo__wrapper-unstable").css({ opacity: "1" });
-  //   }
-  // });
+  function hideHeader() {
+    let activeSlide;
+
+    $(".section").each(function () {
+      if ($(this).context.className.includes("active")) {
+        activeSlide = $(this).context;
+      }
+    });
+
+    switch (activeSlide.attributes["data-slide"].value) {
+      case "1":
+        $(".logo__wrapper-unstable").css({ display: "none" });
+        break;
+      case "11":
+        $(".logo__wrapper-unstable").css({ display: "none" });
+        break;
+      default:
+        $(".logo__wrapper-unstable").css({ display: "flex" });
+        break;
+    }
+
+    chengeTitle(+activeSlide.attributes["data-slide"].value);
+  }
+  hideHeader();
+
+  // Chenge title on slide
+  function chengeTitle(active) {
+    let title = $(".title__head")[0];
+    console.log(active);
+
+    title.textContent = TITLES[active - 1];
+  }
+  chengeTitle();
 
   //Удаление активного элемента в рамках селектора
   function RemoveActive(a) {
@@ -1190,6 +1226,7 @@ $(document).ready(function () {
           $(".feed__frame").removeClass("active");
           $(".feed__frame").attr("src", "");
         }
+        hideHeader();
       }, 50);
     }
 

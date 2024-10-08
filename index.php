@@ -46,13 +46,13 @@ Template Post Type: page
         </div>
       </div>
     </section>
-    <section class="section section_1" data-slide="2">
+    <section class="section section_2" data-slide="2">
       <div class="wrapper desktop_video__wrapper">
           <div class="container-columns">
-            <div class="column">
+            <div class="section2__column">
               <img
-                class="wtitch_logo"
-                src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-twitch.svg"
+                class="twitch_logo streem_logo"
+                src="<?php echo get_stylesheet_directory_uri(); ?>/img/twitch_logo.png"
                 alt="twitch"
               />
               <div class="blure_container twitch">
@@ -64,12 +64,12 @@ Template Post Type: page
                 </div>
               </div>
               <div class="blure_container_btn">
-                <button class="look_btn" id="look-wtitch">Посмотреть формат</button>
+                <button class="look_btn" id="look-twitch">Посмотреть формат</button>
               </div>
             </div>
-            <div class="column">
+            <div class="section2__column">
               <img
-                class="vkplay_logo"
+                class="vkplay_logo streem_logo"
                 src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-vkplay1.svg"
                 alt="vkplay"
               />
@@ -85,6 +85,7 @@ Template Post Type: page
                 <button class="look_btn" id="look-vkplay">Посмотреть формат</button>
               </div>
             </div>
+            <div class="descriptoin_slide">Средние значения в день*</div>
         </div>
         <img class="woman_vr2" src="<?php echo get_stylesheet_directory_uri(); ?>/img/pict_girl.png" alt="girl"/>
         <div class="background"></div>
