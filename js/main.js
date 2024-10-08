@@ -3,12 +3,14 @@ $(document).ready(function () {
     "Lilo",
     "Платформы",
     "Наша сеть",
-    "Стример получает",
     "Контент всегда в топе",
-    "Преимущества работы с лило",
-    "Форматы (Bar in video)",
-    "Форматы (Overlay banner)",
-    "Форматы (Banner)",
+    "Стример получает",
+    "Размещение рекламы",
+    "Форматы",
+    "Форматы",
+    "Форматы",
+    "Форматы",
+    "Преимущества работы с Lilo",
     "Что нужно для запуска?",
     "Запуск",
   ];
@@ -27,7 +29,7 @@ $(document).ready(function () {
       case "1":
         $(".logo__wrapper-unstable").css({ opacity: 0 });
         break;
-      case "11":
+      case "13":
         $(".logo__wrapper-unstable").css({ opacity: 0 });
         break;
       default:

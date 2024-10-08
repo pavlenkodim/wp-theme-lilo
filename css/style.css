@@ -6449,7 +6449,7 @@ body p.stats__desc--2 {
   height: 40vh;
   flex-shrink: 0;
   flex-direction: column;
-  border-radius: 10px;
+  border-radius: 0.4vw;
   backdrop-filter: blur(25px);
   display: flex;
   flex-direction: column;
@@ -6491,7 +6491,7 @@ body p.stats__desc--2 {
 .blure_container_btn .look_btn {
   position: relative;
   top: -6vh;
-  border-radius: 12px;
+  border-radius: 0.48vw;
   color: #fff;
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(25px);
@@ -6579,8 +6579,89 @@ body p.stats__desc--2 {
 .section_4 {
   display: flex;
 }
-
+.section4__info__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2.8vh;
+}
+.section4__title {
+  font-size: 2.23vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.slide_title__right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.71vh;
+}
 .streem_4 {
   width: 65vw;
   height: 65vh;
+}
+.section4__card {
+  padding: 3.2vh 0.9vw;
+  backdrop-filter: blur(25px);
+  border-radius: 0.4vw;
+  background: rgba(60, 1, 135, 0.3);
+}
+
+.purp {
+  backdrop-filter: blur(25px);
+  border-radius: 0.4vw;
+  background: rgba(60, 1, 135, 0.3);
+}
+
+.section4__description {
+  font-weight: 700;
+}
+
+.big_title {
+  font-size: 2.63vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.section_5 {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.section_5__wrapper__left {
+  width: 36vw;
+  display: flex;
+  flex-direction: column;
+  gap: 3.71vh;
+}
+.section_5_blure__left,
+.section_5_blure__right {
+  width: 34vw;
+  height: 32vh;
+  padding: 3.2vh 3.9vw;
+}
+.girl__6 {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 100vh;
+}
+
+.btn__blue {
+  text-align: center;
+  padding: 6.5vh 3.9vw;
+  font-weight: 500;
+  color: #fff;
+  opacity: 0.6;
+  background-image: url("/wp-content/themes/wp-theme-lilo/img/cloud_btn.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  left: 14.3vw;
+  top: 3.3vh;
+}
+.btn__blue:hover {
+  opacity: 1;
 }

@@ -89,6 +89,10 @@ Template Post Type: page
         </div>
         <img class="woman_vr2" src="<?php echo get_stylesheet_directory_uri(); ?>/img/pict_girl.png" alt="girl"/>
         <div class="background"></div>
+        <div class="background_smoke">
+          <img id="shadow_purp" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_purp.svg" alt="" />
+          <img id="shadow_blue" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_blue.svg" alt="" />
+        </div>
       </div>
     </section>
     <section class="section section_3" data-slide="3">
@@ -129,14 +133,20 @@ Template Post Type: page
         <img class="bg_sky" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg3.png" alt="">
         <img class="girl_streem" src="<?php echo get_stylesheet_directory_uri(); ?>/img/girl3.png" alt="">
       </div>
+      <div class="background_smoke">
+          <img id="shadow_purp" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_purp.svg" alt="" />
+          <img id="shadow_blue" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_blue.svg" alt="" />
+        </div>
     </section>
     <section class="section" data-slide="4">
       <div class="wrapper optimization__wrapper">
         <div class="section_4">
           <video class="streem_4" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s4.mp4" > </video>
           <div class="section4__info__wrapper">
-            <h2 class="section4__title">Пребывание в топе</h2>
-            <p class="section4__description">Повышенное внимание со стороны зрителей</p>
+            <div class="slide_title__right">
+              <h2 class="section4__title">Пребывание в топе</h2>
+              <p class="section4__description">Повышенное внимание со стороны зрителей</p>
+            </div>
             <div class="section4__card">
               <div class="big_title">
                 80% зрителей
@@ -156,41 +166,244 @@ Template Post Type: page
           </div>
 
         </div>
+        <div class="background_smoke">
+          <img id="shadow_purp" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_purp.svg" alt="" />
+          <img id="shadow_blue" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_blue.svg" alt="" />
+        </div>
       </div>
     </section>
-    <section class="section section_9" data-slide="5">
-      <div class="wrapper feed__wrapper">
-        
+    <section class="section" data-slide="5">
+      <div class="wrapper section_5">
+        <div class="section_5__wrapper__left">
+          <div class="blure_container section_5_blure__left purp">
+            <div class="blure_container_content">
+              <h3>Быстрый прирост зрителей</h3>
+              <p> Стримеры, подключенные к нашей сети, получают поддержку для увеличения аудитории, что увеличивает охват вашей рекламы за короткий срок.</p>
+            </div>
+          </div>
+          <div class="blure_container section_5_blure__left purp">
+            <div class="blure_container_content">
+              <h3>Быстрый прирост зрителей</h3>
+              <p> Стримеры, подключенные к нашей сети, получают поддержку для увеличения аудитории, что увеличивает охват вашей рекламы за короткий срок.</p>
+            </div>
+          </div>
+        </div>
+        <div class="blure_container section_5_blure__right purp">
+          <div class="blure_container_content">
+            <h3>Быстрый прирост зрителей</h3>
+            <p> Стримеры, подключенные к нашей сети, получают поддержку для увеличения аудитории, что увеличивает охват вашей рекламы за короткий срок.</p>
+          </div>
+        </div>
       </div>
+      <div class="background">
+        <img class="girl__6" src="<?php echo get_stylesheet_directory_uri(); ?>/img/girl_6.png" alt="">
+      </div>
+      <div class="background_smoke">
+          <img id="shadow_purp" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_purp.svg" alt="" />
+          <img id="shadow_blue" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_blue.svg" alt="" />
+        </div>
     </section>
     <section class="section section_10" data-slide="6">
       <div class="wrapper stats__wrapper">
-      
+        <div class="background_smoke">
+          <img id="shadow_purp" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_purp.svg" alt="" />
+          <img id="shadow_blue" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_blue.svg" alt="" />
+        </div>
       </div>
     </section>
-    <section class="section section_4" data-slide="7">
+    <section class="section" data-slide="7">
       <div class="wrapper verifires__wrapper">
-        
-      </div>
-    </section>
-    <section class="section section_5" data-slide="8">
-      <div class="wrapper eye__wrapper">
-        
-      </div>
-    </section>
-    <section class="section section_6" data-slide="9">
-      <div class="wrapper brand__wrapper">
-        
-      </div>
-    </section>
-    <section class="section section_7" data-slide="10">
-      <div class="wrapper sales__wrapper">
+        <div class="section_4">
+          <video class="streem_4" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s4.mp4" > </video>
+          <div class="section4__info__wrapper">
+            <div class="slide_title__right">
+              <h2 class="section4__title">In-Stream Pre-Roll</h2>
+              <p class="section4__description">Широкий охват аудитории </p>
+              <p>Первый шаг в стратегии продвижения бренда для максимального охвата и привлечения внимания целевой аудитории</p>
+            </div>
+            <div class="section4__card">
+              <div class="big_title">
+                0,8% - CTR
+              </div>
+            </div>
+            <div class="section4__card">
+              <div class="big_title">
+                80% - VTR
+              </div>
+            </div>
+            <div class="section4__card">
+              <div class="big_title">
+                80% - Viewability
+              </div>
+            </div>
+            <button class="look_format">Посмотреть формат</button>
+          </div>
 
+        </div>
+        <div class="background_smoke">
+          <img id="shadow_purp" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_purp.svg" alt="" />
+          <img id="shadow_blue" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_blue.svg" alt="" />
+        </div>
       </div>
     </section>
-    <section class="section section_7" data-slide="11">
-      <div class="wrapper ">
+    <section class="section" data-slide="8">
+      <div class="wrapper eye__wrapper">
+        <div class="section_4">
+          <video class="streem_4" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s4.mp4" > </video>
+          <div class="section4__info__wrapper">
+            <div class="slide_title__right">
+              <h2 class="section4__title">Interactive Bar</h2>
+              <p class="section4__description">Гибкие настройки таргетинга </p>
+              <p>Может быть адаптирован под разные форматы видеоплатформ и каналов.</p>
+            </div>
+            <div class="section4__card">
+              <div class="big_title">
+                1,2% - CTR
+              </div>
+              <div class="card_subtitle">
+                Переходы на стрим
+              </div>
+            </div>
+            <div class="section4__card">
+              <div class="big_title">
+                100% - Viewability
+              </div>
+              <div class="card_subtitle">
+                Видимость креатива
+              </div>
+            </div>
+            <button class="look_format">Посмотреть формат</button>
+          </div>
+        </div>
+        <div class="background_smoke">
+          <img id="shadow_purp" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_purp.svg" alt="" />
+          <img id="shadow_blue" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_blue.svg" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="section" data-slide="9">
+      <div class="wrapper brand__wrapper">
+        <div class="section_4">
+          <video class="streem_4" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s3.mp4" > </video>
+          <div class="section4__info__wrapper">
+            <div class="slide_title__right">
+              <h2 class="section4__title">Overlay banner</h2>
+              <p class="section4__description">
+                Высокая видимость <br>
+                Возможность анимированной
+                визуализации для привлечения внимания
+                на фоне основного контента стрима
+              </p>
+            </div>
+            <div class="section4__card">
+              <div class="big_title">
+                100% - Viewability
+              </div>
+              <div class="card_subtitle">
+                Видимость креатива
+              </div>
+            </div>
+            <button class="look_format">Посмотреть формат</button>
+          </div>
+
+        </div>
+        <div class="background_smoke">
+          <img id="shadow_purp" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_purp.svg" alt="" />
+          <img id="shadow_blue" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_blue.svg" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="section" data-slide="10">
+      <div class="wrapper sales__wrapper">
+        <div class="section_4">
+          <video class="streem_4" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s4.mp4" > </video>
+          <div class="section4__info__wrapper">
+            <div class="slide_title__right">
+              <h2 class="section4__title">Banner</h2>
+              <p class="section4__description">Повышение конверсии аудитории</p>
+              <p>Уникальные УТП позволяют повысить уровень конверсии, а так же расширяют возможности аналитики для оптимизации рекламного бюджета.</p>
+            </div>
+            <div class="section4__card">
+              <div class="big_title">
+                1% - CTR
+              </div>
+              <div class="card_subtitle">
+                Переходы со стрима на страницу продукта
+              </div>
+            </div>
+            <div class="section4__card">
+              <div class="big_title">
+                70% - Viewability
+              </div>
+              <div class="card_subtitle">
+                Видимость креатива
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="background_smoke">
+          <img id="shadow_purp" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_purp.svg" alt="" />
+          <img id="shadow_blue" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_blue.svg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section" data-slide="11">
+      <div class="wrapper lilo__wrapper">
         
+        <div class="background">
+        </div>
+        <div class="background_smoke">
+          <img id="shadow_purp" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_purp.svg" alt="" />
+          <img id="shadow_blue" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_blue.svg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section" data-slide="12">
+      <div class="wrapper lilo__wrapper">
+        
+        <div class="background">
+        </div>
+        <div class="background_smoke">
+          <img id="shadow_purp" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_purp.svg" alt="" />
+          <img id="shadow_blue" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_blue.svg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section" data-slide="13">
+      <div class="wrapper lilo__wrapper">
+        <div class="content__lilo">
+          <img class="logo__big" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-lilo-big.svg" alt="LILO">
+          <img class="dots__purp" src="<?php echo get_stylesheet_directory_uri(); ?>/img/dots-purp.svg" alt="...">
+          <div class="content__lilo__text">
+            <p>
+              <b>
+                Мы уверены, что будем полезны вам в продвижении вашего бренда!
+              </b>
+            </p>
+            <p>
+              Наша команда сэкономит ваше время: от планирования и создания рекламных материалов до запуска и оптимизации кампаний.
+            </p>
+            <p>
+              Мы всегда готовы предоставить дополнительную информацию и помочь вам настроить успешную рекламную кампанию.
+            </p>
+          </div>
+        </div>
+        <a class="btn__blue" href="/">СПИСОК СТРИМЕРОВ</a>
+        <img
+          class="background-img woman_vr"
+          src="<?php echo get_stylesheet_directory_uri(); ?>/img/girl_witcher.png"
+          alt="woman wearing vr glasses gaming"
+        />
+        <div class="background">
+        </div>
+        <div class="background_smoke">
+          <img id="shadow_purp" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_purp.svg" alt="" />
+          <img id="shadow_blue" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_blue.svg" alt="" />
+        </div>
       </div>
     </section>
 
@@ -198,10 +411,10 @@ Template Post Type: page
 </div>
 <div class="p-nav">
   <div class="p-nav__list">
-    <div class="p-nav__item" data-slide="11">
+    <div class="p-nav__item" data-slide="13">
       <p class="p-nav__item--title">Запуск</p>
     </div>
-    <div class="p-nav__item" data-slide="10">
+    <div class="p-nav__item" data-slide="12">
       <p class="p-nav__item--title">Что нужно для запуска?</p>
     </div>
     <div class="p-nav__item" data-slide="9">
@@ -213,14 +426,14 @@ Template Post Type: page
     <div class="p-nav__item" data-slide="7">
       <p class="p-nav__item--title">Форматы (Bar in video)</p>
     </div>
-    <div class="p-nav__item" data-slide="6">
+    <div class="p-nav__item" data-slide="11">
       <p class="p-nav__item--title">Преимущества работы с лило</p>
     </div>
     <div class="p-nav__item" data-slide="5">
-      <p class="p-nav__item--title">Контент всегда в топе</p>
+      <p class="p-nav__item--title">Стример получает</p>
     </div>
     <div class="p-nav__item" data-slide="4">
-      <p class="p-nav__item--title">Стример получает</p>
+      <p class="p-nav__item--title">Контент всегда в топе</p>
     </div>
     <div class="p-nav__item" data-slide="3">
       <p class="p-nav__item--title">Наша сеть</p>
