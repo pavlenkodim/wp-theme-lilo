@@ -41,8 +41,9 @@ Template Post Type: page
         <div class="background">
         </div>
         <div class="background_smoke">
-          <img id="shadow_purp" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_purp.svg" alt="" />
-          <img id="shadow_blue" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_blue.svg" alt="" />
+          <img class="bg" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg1.png" alt="" />
+          <!-- <img id="shadow_purp" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_purp.svg" alt="" /> -->
+          <!-- <img id="shadow_blue" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_blue.svg" alt="" /> -->
         </div>
       </div>
     </section>
@@ -90,8 +91,9 @@ Template Post Type: page
         <img class="woman_vr2" src="<?php echo get_stylesheet_directory_uri(); ?>/img/pict_girl.png" alt="girl"/>
         <div class="background"></div>
         <div class="background_smoke">
-          <img id="shadow_purp" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_purp.svg" alt="" />
-          <img id="shadow_blue" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_blue.svg" alt="" />
+          <img class="bg" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg2.png" alt="" />
+          <!-- <img id="shadow_purp" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_purp.svg" alt="" />
+          <img id="shadow_blue" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_blue.svg" alt="" /> -->
         </div>
       </div>
     </section>
@@ -126,22 +128,22 @@ Template Post Type: page
           </div>
         </div>
         <div>
-          <video class="streem_3" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s3.mp4" > </video>
+          <video class="streem streem_3" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s3.mp4" > </video>
         </div>
       </div>
+      <img class="girl_streem" src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_woman.png" alt="">
       <div class="background">
-        <img class="girl_streem" src="<?php echo get_stylesheet_directory_uri(); ?>/img/girl3.png" alt="">
       </div>
       <div class="background_smoke">
-        <img class="bg_sky" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg3.png" alt="">
-          <img id="shadow_purp" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_purp.svg" alt="" />
-          <img id="shadow_blue" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_blue.svg" alt="" />
+        <img class="bg" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg3.png" alt="">
+          <!-- <img id="shadow_purp" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_purp.svg" alt="" />
+          <img id="shadow_blue" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_blue.svg" alt="" /> -->
         </div>
     </section>
     <section class="section" data-slide="4">
       <div class="wrapper optimization__wrapper">
         <div class="section_4">
-          <video class="streem_4" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s4.mp4" > </video>
+          <video class="streem streem_4" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s4.mp4" > </video>
           <div class="section4__info__wrapper">
             <div class="slide_title__right">
               <h2 class="section4__title">Пребывание в топе</h2>
@@ -194,26 +196,28 @@ Template Post Type: page
           </div>
         </div>
       </div>
+      <img class="girl__6" src="<?php echo get_stylesheet_directory_uri(); ?>/img/girl_6.png" alt="">
       <div class="background">
-        <img class="girl__6" src="<?php echo get_stylesheet_directory_uri(); ?>/img/girl_6.png" alt="">
       </div>
       <div class="background_smoke">
-          <img id="shadow_purp" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_purp.svg" alt="" />
-          <img id="shadow_blue" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_blue.svg" alt="" />
+        <img class="bg" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg5.png" alt="">
+          <!-- <img id="shadow_purp" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_purp.svg" alt="" />
+          <img id="shadow_blue" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_blue.svg" alt="" /> -->
         </div>
     </section>
     <section class="section section_10" data-slide="6">
       <div class="wrapper stats__wrapper">
         <div class="background_smoke">
-          <img id="shadow_purp" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_purp.svg" alt="" />
-          <img id="shadow_blue" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_blue.svg" alt="" />
+          <img class="bg" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg7.png" alt="">
+          <!-- <img id="shadow_purp" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_purp.svg" alt="" />
+          <img id="shadow_blue" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_blue.svg" alt="" /> -->
         </div>
       </div>
     </section>
     <section class="section" data-slide="7">
-      <div class="wrapper verifires__wrapper">
-        <div class="section_4">
-          <video class="streem_4" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s4.mp4" > </video>
+      <div class="wrapper ">
+        <div class="section_7">
+          <video class="streem streem_7" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s4.mp4" > </video>
           <div class="section4__info__wrapper">
             <div class="slide_title__right">
               <h2 class="section4__title">In-Stream Pre-Roll</h2>
@@ -240,15 +244,16 @@ Template Post Type: page
 
         </div>
         <div class="background_smoke">
-          <img id="shadow_purp" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_purp.svg" alt="" />
-          <img id="shadow_blue" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_blue.svg" alt="" />
+          <img class="bg" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg7.png" alt="">
+          <!-- <img id="shadow_purp" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_purp.svg" alt="" />
+          <img id="shadow_blue" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_blue.svg" alt="" /> -->
         </div>
       </div>
     </section>
     <section class="section" data-slide="8">
       <div class="wrapper eye__wrapper">
         <div class="section_4">
-          <video class="streem_4" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s4.mp4" > </video>
+          <video class="streem streem_4" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s4.mp4" > </video>
           <div class="section4__info__wrapper">
             <div class="slide_title__right">
               <h2 class="section4__title">Interactive Bar</h2>
@@ -275,15 +280,16 @@ Template Post Type: page
           </div>
         </div>
         <div class="background_smoke">
-          <img id="shadow_purp" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_purp.svg" alt="" />
-          <img id="shadow_blue" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_blue.svg" alt="" />
+          <img class="bg" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg7.png" alt="">
+          <!-- <img id="shadow_purp" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_purp.svg" alt="" />
+          <img id="shadow_blue" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_blue.svg" alt="" /> -->
         </div>
       </div>
     </section>
     <section class="section" data-slide="9">
       <div class="wrapper brand__wrapper">
         <div class="section_4">
-          <video class="streem_4" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s3.mp4" > </video>
+          <video class="streem streem_4" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s3.mp4" > </video>
           <div class="section4__info__wrapper">
             <div class="slide_title__right">
               <h2 class="section4__title">Overlay banner</h2>
@@ -307,15 +313,16 @@ Template Post Type: page
 
         </div>
         <div class="background_smoke">
-          <img id="shadow_purp" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_purp.svg" alt="" />
-          <img id="shadow_blue" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_blue.svg" alt="" />
+          <img class="bg" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg7.png" alt="">
+          <!-- <img id="shadow_purp" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_purp.svg" alt="" />
+          <img id="shadow_blue" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_blue.svg" alt="" /> -->
         </div>
       </div>
     </section>
     <section class="section" data-slide="10">
       <div class="wrapper sales__wrapper">
         <div class="section_4">
-          <video class="streem_4" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s4.mp4" > </video>
+          <video class="streem streem_4" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s4.mp4" > </video>
           <div class="section4__info__wrapper">
             <div class="slide_title__right">
               <h2 class="section4__title">Banner</h2>
@@ -342,8 +349,9 @@ Template Post Type: page
 
         </div>
         <div class="background_smoke">
-          <img id="shadow_purp" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_purp.svg" alt="" />
-          <img id="shadow_blue" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_blue.svg" alt="" />
+          <img class="bg" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg7.png" alt="">
+          <!-- <img id="shadow_purp" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_purp.svg" alt="" />
+          <img id="shadow_blue" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_blue.svg" alt="" /> -->
         </div>
       </div>
     </section>
@@ -354,8 +362,9 @@ Template Post Type: page
         <div class="background">
         </div>
         <div class="background_smoke">
-          <img id="shadow_purp" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_purp.svg" alt="" />
-          <img id="shadow_blue" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_blue.svg" alt="" />
+          <img class="bg" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg7.png" alt="">
+          <!-- <img id="shadow_purp" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_purp.svg" alt="" />
+          <img id="shadow_blue" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_blue.svg" alt="" /> -->
         </div>
       </div>
     </section>
@@ -366,8 +375,9 @@ Template Post Type: page
         <div class="background">
         </div>
         <div class="background_smoke">
-          <img id="shadow_purp" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_purp.svg" alt="" />
-          <img id="shadow_blue" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_blue.svg" alt="" />
+          <img class="bg" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg7.png" alt="">
+          <!-- <img id="shadow_purp" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_purp.svg" alt="" />
+          <img id="shadow_blue" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_blue.svg" alt="" /> -->
         </div>
       </div>
     </section>
@@ -400,8 +410,9 @@ Template Post Type: page
         <div class="background">
         </div>
         <div class="background_smoke">
-          <img id="shadow_purp" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_purp.svg" alt="" />
-          <img id="shadow_blue" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_blue.svg" alt="" />
+          <img class="bg" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg1.png" alt="">
+          <!-- <img id="shadow_purp" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_purp.svg" alt="" />
+          <img id="shadow_blue" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_blue.svg" alt="" /> -->
         </div>
       </div>
     </section>

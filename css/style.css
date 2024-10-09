@@ -6533,7 +6533,7 @@ body p.stats__desc--2 {
   align-items: start;
 }
 
-.bg_sky {
+.bg {
   position: fixed;
   right: 0;
   bottom: 0;
@@ -6543,17 +6543,17 @@ body p.stats__desc--2 {
 }
 
 .streem_3 {
-  width: 50vw;
-  height: 50vh;
+  width: 44vw;
+  /* height: 50vh; */
 }
 
 .girl_streem {
   position: fixed;
-  left: 5vw;
-  bottom: 0;
+  left: 1vw;
+  bottom: -12vh;
   z-index: 1;
-  height: 52vh;
-  width: 40vw;
+  height: 78vh;
+  width: 55vw;
 }
 
 .section_3__info {
@@ -6664,4 +6664,34 @@ body p.stats__desc--2 {
 }
 .btn__blue:hover {
   opacity: 1;
+}
+
+.streem {
+  border: 1px solid #fff;
+  border-radius: 0.5vw;
+}
+
+.streem_7 {
+  width: 60vw;
+  height: 60vh;
+}
+.section_7 {
+  display: flex;
+  gap: 2.4vw;
+  align-items: center;
+}
+
+.look_format {
+  color: #ffffff;
+  width: 24vw;
+  padding: 18px 42px;
+  border: 1px solid #ffffff4d;
+  border-radius: 0.48vw;
+  text-align: center;
+  /* font-family: Unbounded; */
+  font-size: 1.5vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+  letter-spacing: 0.4px;
 }
