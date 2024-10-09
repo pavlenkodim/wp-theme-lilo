@@ -6578,6 +6578,8 @@ body p.stats__desc--2 {
 
 .section_4 {
   display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 .section4__info__wrapper {
   display: flex;
@@ -6596,8 +6598,8 @@ body p.stats__desc--2 {
   gap: 1.71vh;
 }
 .streem_4 {
-  width: 65vw;
-  height: 65vh;
+  width: 50vw;
+  /* height: 65vh; */
 }
 .section4__card {
   padding: 3.2vh 0.9vw;
@@ -6659,11 +6661,16 @@ body p.stats__desc--2 {
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-  left: 14.3vw;
-  top: 3.3vh;
+  /* left: 14.3vw;
+  top: 3.3vh; */
 }
 .btn__blue:hover {
   opacity: 1;
+}
+
+.btn__blue_sreemers_list {
+  left: 14.3vw;
+  top: 3.3vh;
 }
 
 .streem {
@@ -6672,19 +6679,18 @@ body p.stats__desc--2 {
 }
 
 .streem_7 {
-  width: 60vw;
-  height: 60vh;
+  width: 48vw;
 }
 .section_7 {
   display: flex;
-  gap: 2.4vw;
+  gap: 7.4vw;
   align-items: center;
 }
 
 .look_format {
   color: #ffffff;
   width: 24vw;
-  padding: 18px 42px;
+  padding: 0.75vh 1.75vw;
   border: 1px solid #ffffff4d;
   border-radius: 0.48vw;
   text-align: center;
@@ -6694,4 +6700,109 @@ body p.stats__desc--2 {
   font-weight: 400;
   line-height: 180%;
   letter-spacing: 0.4px;
+}
+
+.streem_8 {
+  /* width: 48vw; */
+  height: 60vh;
+}
+
+.flame_block_with_img_outline {
+  display: flex;
+  align-items: center;
+  width: 48vw;
+  position: relative;
+}
+.img__outline {
+  width: 24vw;
+}
+.img__outline_planet {
+  width: 22vw;
+}
+.flame_block_with_img_outline.top__left {
+  top: 14vw;
+  right: 16vw;
+}
+.flame_block_with_img_outline.center__right {
+  left: 12vw;
+  top: 4vw;
+}
+.flame_block_with_img_outline.bottom_left {
+  bottom: 14vh;
+  right: 10vw;
+}
+.flame__descript {
+  padding: 3.25vh 0;
+  border-bottom: 1px solid #ffffff4d;
+}
+
+.needed_section {
+  height: 53vh;
+}
+.needed_col__wrapper {
+  display: grid;
+  grid-template-columns: 25vw 25vw 25vw;
+  gap: 3vw;
+}
+
+.needed_col__wrapper .needed_col {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75vw 6.25vh;
+  height: 100%;
+  border-radius: 0.4vw;
+  backdrop-filter: blur(25px);
+  background: rgba(60, 1, 135, 0.3);
+}
+
+.needed__image {
+  position: relative;
+  width: 13vw;
+  left: 3vw;
+  bottom: 10vh;
+}
+.needed__image.figma {
+  width: 10vw;
+  margin: 2.5vh 0;
+}
+
+.section__ads {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+.ads_info {
+  width: 26vw;
+}
+.ads_carusel__vertical {
+  position: fixed;
+  width: 42vw;
+  height: 100%;
+  right: 8.8vw;
+  bottom: 30vh;
+}
+.ads_carusel__vertical video {
+  width: 42vw;
+}
+.ads_info__cards_container {
+  display: grid;
+  grid-template-rows: 11.5vh 11.5vh;
+  grid-template-columns: 12.75vw 12.75vw;
+  gap: 0.4vw;
+}
+.ads_info__card {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.ads_info__descript {
+  margin-bottom: 0.4vw;
+}
+.ads_info_cards_arrow {
+  width: 1.25vw;
+  position: relative;
+  bottom: 4vh;
+  left: 0.75vw;
 }
