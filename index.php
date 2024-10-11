@@ -49,8 +49,9 @@ Template Post Type: page
     </section>
     <section class="section section_2" data-slide="2">
       <div class="wrapper desktop_video__wrapper">
-          <div class="container-columns">
-            <div class="section2__column">
+        <div class="container-columns">
+          <div class="section2__column">
+              <img class="twitch-bg-plaseholder" src="<?php echo get_stylesheet_directory_uri(); ?>/img/twitch-bg.png" alt="">
               <img
                 class="twitch_logo streem_logo"
                 src="<?php echo get_stylesheet_directory_uri(); ?>/img/twitch_logo.png"
@@ -69,6 +70,7 @@ Template Post Type: page
               </div>
             </div>
             <div class="section2__column">
+              <img class="vklay-bg-plaseholder" src="<?php echo get_stylesheet_directory_uri(); ?>/img/vkplay-bg.png" alt="">
               <img
                 class="vkplay_logo streem_logo"
                 src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-vkplay1.svg"
@@ -177,21 +179,21 @@ Template Post Type: page
         <div class="section_5__wrapper__left">
           <div class="blure_container section_5_blure__left purp">
             <div class="blure_container_content">
-              <h3>Быстрый прирост зрителей</h3>
+              <h2>Быстрый прирост зрителей</h2>
               <p> Стримеры, подключенные к нашей сети, получают поддержку для увеличения аудитории, что увеличивает охват вашей рекламы за короткий срок.</p>
             </div>
           </div>
           <div class="blure_container section_5_blure__left purp">
             <div class="blure_container_content">
-              <h3>Быстрый прирост зрителей</h3>
-              <p> Стримеры, подключенные к нашей сети, получают поддержку для увеличения аудитории, что увеличивает охват вашей рекламы за короткий срок.</p>
+              <h2>Осознанная и целевая аудитория</h2>
+              <p>Подключение стримеров к нашей сети обеспечивает видимость на основных платформах, что гарантирует попадание их трансляций в топ и   большой рекламный потенциал.</p>
             </div>
           </div>
         </div>
         <div class="blure_container section_5_blure__right purp">
           <div class="blure_container_content">
-            <h3>Быстрый прирост зрителей</h3>
-            <p> Стримеры, подключенные к нашей сети, получают поддержку для увеличения аудитории, что увеличивает охват вашей рекламы за короткий срок.</p>
+            <h2>Гарантированный вывод в топ категорий</h2>
+            <p>Благодаря продвинутым возможностям таргетирования и органическому росту целевой аудитории, реклама будет показана <b>заинтересованным пользователям</b></p>
           </div>
         </div>
       </div>

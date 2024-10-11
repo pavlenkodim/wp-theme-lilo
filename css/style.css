@@ -54,6 +54,49 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Unbounded";
+  src: url("../fonts/Montserrat-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Unbounded";
+  src: url("../fonts/Unbounded-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Unbounded";
+  src: url("../fonts/Unbounded-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Unbounded";
+  src: url("../fonts/Unbounded-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Unbounded";
+  src: url("../fonts/Unbounded-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Unbounded";
+  line-height: normal;
+}
+
 body {
   font-family: "Montserrat";
   font-weight: 200;
@@ -6430,6 +6473,11 @@ body p.stats__desc--2 {
   gap: 1.2vh;
   width: 30vw;
   align-items: center;
+  opacity: 0.4;
+  transition-duration: 0.6s;
+}
+.section2__column:hover {
+  opacity: 1;
 }
 .woman_vr2 {
   position: fixed;
@@ -6458,6 +6506,15 @@ body p.stats__desc--2 {
 }
 .blure_container_content {
   text-align: left;
+}
+
+.blure_container_content h2 {
+  font-size: 2vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  justify-content: center;
+  padding-bottom: 1.2vh;
 }
 
 .blure_container_content h3 {
@@ -6525,6 +6582,7 @@ body p.stats__desc--2 {
   width: 25vw;
   height: 25vh;
   object-fit: contain;
+  z-index: 1000;
 }
 
 .our_network__wrapper {
@@ -6619,6 +6677,7 @@ body p.stats__desc--2 {
 }
 
 .big_title {
+  font-family: "Unbounded";
   font-size: 2.63vw;
   font-style: normal;
   font-weight: 500;
@@ -6734,6 +6793,12 @@ body p.stats__desc--2 {
 .flame__descript {
   padding: 3.25vh 0;
   border-bottom: 1px solid #ffffff4d;
+  background-image: url("../img/flame-desc-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.flame__descript__h-full {
 }
 
 .needed_section {
@@ -6805,4 +6870,18 @@ body p.stats__desc--2 {
   position: relative;
   bottom: 4vh;
   left: 0.75vw;
+}
+.twitch-bg-plaseholder {
+  position: absolute;
+  width: 40vw;
+  height: 100vh;
+  top: 0;
+  z-index: 0;
+}
+.vklay-bg-plaseholder {
+  position: absolute;
+  width: 40vw;
+  height: 100vh;
+  top: 0;
+  z-index: 0;
 }
