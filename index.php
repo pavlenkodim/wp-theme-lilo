@@ -50,7 +50,7 @@ Template Post Type: page
     <section class="section section_2" data-slide="2">
       <div class="wrapper desktop_video__wrapper">
         <div class="container-columns">
-          <div class="section2__column">
+          <div class="section2__column section2__column-twitch">
               <img class="twitch-bg-plaseholder" src="<?php echo get_stylesheet_directory_uri(); ?>/img/twitch-bg.png" alt="">
               <img
                 class="twitch_logo streem_logo"
@@ -58,7 +58,7 @@ Template Post Type: page
                 alt="twitch"
               />
               <div class="blure_container twitch">
-                <div class="blure_container_content">
+                <div class="blure_container_content-s2">
                   <h3>20 тысяч</h3>
                   <p>Прямых трансляций</p>
                   <h3>1 миллион</h3>
@@ -69,7 +69,7 @@ Template Post Type: page
                 <button class="look_btn" id="look-twitch">Посмотреть формат</button>
               </div>
             </div>
-            <div class="section2__column">
+            <div class="section2__column section2__column-vkplay">
               <img class="vklay-bg-plaseholder" src="<?php echo get_stylesheet_directory_uri(); ?>/img/vkplay-bg.png" alt="">
               <img
                 class="vkplay_logo streem_logo"
@@ -77,7 +77,7 @@ Template Post Type: page
                 alt="vkplay"
               />
               <div class="blure_container vkplay">
-                <div class="blure_container_content">
+                <div class="blure_container_content-s2">
                   <h3>2 тысячи</h3>
                   <p>Прямых трансляций</p>
                   <h3>170 тысяч</h3>
@@ -162,7 +162,7 @@ Template Post Type: page
             </div>
             <div class="section4__card">
               <div class="big_title">
-                80% зрителей
+                80% <span>зрителей</span>
               </div>
               <div class="card_subtitle">
                 Выбирают трансляцию которая находится в топе
@@ -170,7 +170,7 @@ Template Post Type: page
             </div>
             <div class="section4__card">
               <div class="big_title">
-                1% зрителей
+                1% <span>зрителей</span>
               </div>
               <div class="card_subtitle">
                 Совершают переход с рекламного креатива на продукт
@@ -184,8 +184,8 @@ Template Post Type: page
         </div>
       </div>
     </section>
-    <section class="section" data-slide="5">
-      <div class="wrapper section_5">
+    <section class="section section_5" data-slide="5">
+      <div class="wrapper section_5-cards">
         <div class="section_5__wrapper__left">
           <div class="blure_container section_5_blure__left purp">
             <div class="blure_container_content">
@@ -216,7 +216,7 @@ Template Post Type: page
           <img id="shadow_blue" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_blue.svg" alt="" /> -->
         </div>
     </section>
-    <section class="section" data-slide="6">
+    <section class="section section_6" data-slide="6">
       <div class="wrapper section__ads">
         <div class="section__ads">
           <div class="ads_info">
@@ -267,17 +267,17 @@ Template Post Type: page
             </div>
             <div class="section4__card">
               <div class="big_title">
-                0,8% - CTR
+                0,8% - <span>CTR</span>
               </div>
             </div>
             <div class="section4__card">
               <div class="big_title">
-                80% - VTR
+                80% - <span>VTR</span>
               </div>
             </div>
             <div class="section4__card">
               <div class="big_title">
-                80% - Viewability
+                80% - <span>Viewability</span>
               </div>
             </div>
             <button class="look_format">Посмотреть формат</button>
@@ -303,7 +303,7 @@ Template Post Type: page
             </div>
             <div class="section4__card">
               <div class="big_title">
-                1,2% - CTR
+                1,2% - <span>CTR</span>
               </div>
               <div class="card_subtitle">
                 Переходы на стрим
@@ -311,7 +311,7 @@ Template Post Type: page
             </div>
             <div class="section4__card">
               <div class="big_title">
-                100% - Viewability
+                100% - <span>Viewability</span>
               </div>
               <div class="card_subtitle">
                 Видимость креатива
@@ -335,15 +335,21 @@ Template Post Type: page
             <div class="slide_title__right">
               <h2 class="section4__title">Overlay banner</h2>
               <p class="section4__description">
-                Высокая видимость <br>
-                Возможность анимированной
-                визуализации для привлечения внимания
+                Высокая видимость
+              </p>
+              <p>
+                <b>Возможность анимированной
+                визуализации</b> для привлечения внимания
                 на фоне основного контента стрима
               </p>
+              <h3>
+                Запоминаемость
+              </h3>
+              <p>Повышает вероятность того, что <b>зрители запомнят бренд</b> и его продукт.</p>
             </div>
             <div class="section4__card">
               <div class="big_title">
-                100% - Viewability
+                100% - <span>Viewability</span>
               </div>
               <div class="card_subtitle">
                 Видимость креатива
@@ -372,20 +378,22 @@ Template Post Type: page
             </div>
             <div class="section4__card">
               <div class="big_title">
-                1% - CTR
+                1% - <span>CTR</span>
               </div>
               <div class="card_subtitle">
                 Переходы со стрима на страницу продукта
               </div>
             </div>
+            <img class="bg-section-card" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg-blure-card.png" alt="">
             <div class="section4__card">
               <div class="big_title">
-                70% - Viewability
+                70% - <span>Viewability</span>
               </div>
               <div class="card_subtitle">
                 Видимость креатива
               </div>
             </div>
+            <!-- <img class="bg-section-card" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg-blure-card.png" alt=""> -->
           </div>
 
         </div>
@@ -397,7 +405,7 @@ Template Post Type: page
       </div>
     </section>
 
-    <section class="section" data-slide="11">
+    <section class="section section_11" data-slide="11">
       <div class="wrapper">
           <div class="flame_block_with_img_outline top__left">
             <img class="img__outline_planet" src="<?php echo get_stylesheet_directory_uri(); ?>/img/cyber_planet.png" alt="">
@@ -433,7 +441,7 @@ Template Post Type: page
       </div>
     </section>
 
-    <section class="section" data-slide="12">
+    <section class="section section_12" data-slide="12">
       <div class="wrapper needed_section">
         <div class="needed_col__wrapper">
           <div class="needed_col reserv_col">
@@ -464,7 +472,7 @@ Template Post Type: page
       </div>
     </section>
 
-    <section class="section" data-slide="13">
+    <section class="section section_13" data-slide="13">
       <div class="wrapper lilo__wrapper">
         <div class="content__lilo">
           <img class="logo__big" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-lilo-big.svg" alt="LILO">
