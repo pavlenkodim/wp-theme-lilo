@@ -6632,6 +6632,13 @@ body p.stats__desc--2 {
   border: 0.769px solid rgba(255, 255, 255, 0.3);
   padding: 1.75vh 0.75vw;
   width: 7.25vw;
+  background-image: url(../img/bt.png);
+  background-size: cover;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+.block3__wrapper:hover {
+  scale: 1.05;
 }
 
 .section_4 {
