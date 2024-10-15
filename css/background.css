@@ -45,22 +45,192 @@
 
 #shadow_purp {
   height: 100vh;
+  width: 100vw;
   bottom: 0;
   right: 0;
-  z-index: 1;
-  opacity: 0.5;
+  z-index: -1;
+  opacity: 0.9;
 }
 #shadow_blue {
   height: 100vh;
   bottom: 0;
   left: 0;
   z-index: 1;
-  opacity: 0.5;
+  opacity: 0.9;
 }
+
+.section_2 .shadow-purp {
+  position: fixed;
+  height: 105vh !important;
+  top: -15vh;
+  left: -9vw;
+  opacity: 0.8;
+  transition: opacity 0.5s ease;
+}
+.section_2 .shadow-blue {
+  position: fixed;
+  height: 105vh !important;
+  width: 50vw;
+  top: -15vh;
+  left: -9vw;
+  opacity: 0.8;
+  transition: opacity 0.5s ease;
+}
+
 .bg {
   z-index: -1;
   position: fixed;
   width: 100vw;
   height: 100vh;
   top: 0;
+}
+
+.bg-wing-animated {
+  position: fixed;
+  transition: transform 2s ease;
+  transform-origin: center;
+  height: calc(100vh - 30%);
+}
+
+.section_0.active .bg-wing-animated:nth-child(odd) {
+  animation: moveLeftRotate 1.3s ease-in-out infinite alternate;
+}
+.section_0.active .bg-wing-animated:nth-child(even) {
+  animation: moveRightRotate 1.3s ease-in-out infinite alternate;
+}
+
+.section_2.active .bg-wing-animated:nth-child(odd) {
+  animation: moveLeftRotate 1.3s ease-in-out infinite alternate;
+}
+.section_2.active .bg-wing-animated:nth-child(even) {
+  animation: moveRightRotate 1.3s ease-in-out infinite alternate;
+}
+
+.section_3.active .bg-wing-animated:nth-child(odd) {
+  animation: moveLeftRotate3 1.3s ease-in-out infinite alternate;
+}
+.section_3.active .bg-wing-animated:nth-child(even) {
+  animation: moveRightRotate3 1.3s ease-in-out infinite alternate;
+}
+
+.section_4.active .bg-wing-animated:nth-child(odd) {
+  animation: moveLeftRotate3 1.3s ease-in-out infinite alternate;
+}
+.section_4.active .bg-wing-animated:nth-child(even) {
+  animation: moveRightRotate3 1.3s ease-in-out infinite alternate;
+}
+
+.section_7.active .bg-wing-animated:nth-child(odd) {
+  animation: moveLeftRotate3 1.3s ease-in-out infinite alternate;
+}
+.section_7.active .bg-wing-animated:nth-child(even) {
+  animation: moveRightRotate3 1.3s ease-in-out infinite alternate;
+}
+
+.section_8.active .bg-wing-animated:nth-child(odd) {
+  animation: moveLeftRotate3 1.3s ease-in-out infinite alternate;
+}
+.section_8.active .bg-wing-animated:nth-child(even) {
+  animation: moveRightRotate3 1.3s ease-in-out infinite alternate;
+}
+
+.section_9.active .bg-wing-animated:nth-child(odd) {
+  animation: moveLeftRotate3 1.3s ease-in-out infinite alternate;
+}
+.section_9.active .bg-wing-animated:nth-child(even) {
+  animation: moveRightRotate3 1.3s ease-in-out infinite alternate;
+}
+
+.section_10.active .bg-wing-animated:nth-child(odd) {
+  animation: moveLeftRotate3 1.3s ease-in-out infinite alternate;
+}
+.section_10.active .bg-wing-animated:nth-child(even) {
+  animation: moveRightRotate3 1.3s ease-in-out infinite alternate;
+}
+
+.section_12.active .bg-wing-animated:nth-child(odd) {
+  animation: moveLeftRotate3 1.3s ease-in-out infinite alternate;
+}
+.section_12.active .bg-wing-animated:nth-child(even) {
+  animation: moveRightRotate3 1.3s ease-in-out infinite alternate;
+}
+
+.section_6.active .bg-wing-animated:nth-child(odd) {
+  animation: moveLeftRotate 1.3s ease-in-out infinite alternate;
+}
+.section_6.active .bg-wing-animated:nth-child(even) {
+  animation: moveRightRotate 1.3s ease-in-out infinite alternate;
+}
+
+.section_13.active .bg-wing-animated:nth-child(odd) {
+  animation: moveLeftRotate 1.3s ease-in-out infinite alternate;
+}
+.section_13.active .bg-wing-animated:nth-child(even) {
+  animation: moveRightRotate 1.3s ease-in-out infinite alternate;
+}
+
+@keyframes moveLeftRotate {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-1.5vw) rotate(-5deg);
+  }
+}
+
+@keyframes moveRightRotate {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  100% {
+    transform: translateX(1.5vw) rotate(5deg);
+  }
+}
+
+@keyframes moveLeftRotate3 {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-1.5vw) rotate(-3deg);
+  }
+}
+
+@keyframes moveRightRotate3 {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  100% {
+    transform: translateX(1.5vw) rotate(3deg);
+  }
+}
+
+.bg-wing-animated.top {
+  top: -3vh;
+}
+.bg-wing-animated.bottom {
+  bottom: -3vh;
+}
+.bg-wing-animated.left {
+  left: -3vw;
+}
+.bg-wing-animated.right {
+  right: -3vw;
+}
+
+.dust-purp-twitch {
+  position: absolute;
+  z-index: -1;
+  top: 9vh;
+  left: -7vw;
+  width: 100%;
+  height: 100%;
+}
+.dust-purp-vkplay {
+  position: absolute;
+  z-index: -1;
+  top: 9vh;
+  left: 7vw;
+  width: 100%;
+  height: 100%;
 }
