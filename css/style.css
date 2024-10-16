@@ -6229,6 +6229,7 @@ body p.stats__desc--2 {
   transform: translateY(0) scale(1);
 }
 .blure_container {
+  z-index: 50;
   width: 100%;
   height: 40vh;
   flex-shrink: 0;
@@ -6297,6 +6298,10 @@ body p.stats__desc--2 {
 .blure_container_btn {
   display: flex;
   justify-content: center;
+  z-index: 1000;
+}
+.look_btn {
+  z-index: 1000;
 }
 .blure_container_btn .look_btn {
   position: relative;
@@ -6309,12 +6314,13 @@ body p.stats__desc--2 {
   padding: 18px 42px;
   border: none;
   text-align: center;
-  /* font-family: Unbounded; */
-  font-size: 1.5vw;
+  font-family: Unbounded;
+  font-size: 1.2vw;
   font-style: normal;
   font-weight: 400;
   line-height: 180%;
   letter-spacing: 0.4px;
+  z-index: 100;
 }
 .blure_container_btn #look-twitch {
   background: #fff;
@@ -6475,16 +6481,14 @@ body p.stats__desc--2 {
 }
 
 .section4__card {
-  padding: 3.2vh 1.9vw;
+  padding: 3.8vh 1.9vw;
   backdrop-filter: blur(25px);
   border-radius: 0.4vw;
   background: linear-gradient(90deg, #380b6c 0%, rgba(60, 1, 135, 0) 100%);
-}
-
-.purp {
-  backdrop-filter: blur(25px);
-  border-radius: 0.4vw;
-  background: rgba(60, 1, 135, 0.3);
+  background-image: url("../img/bg/dust purp-bg-container.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .section4__description {
@@ -6704,6 +6708,7 @@ body p.stats__desc--2 {
   gap: 3vw;
   transform: translateY(-5vh);
   transition: transform 1s ease-out;
+  margin-bottom: 16vh;
 }
 .section_12.active .needed_col__wrapper {
   transform: translateY(0);
@@ -6711,28 +6716,37 @@ body p.stats__desc--2 {
 
 .needed_col__wrapper .needed_col {
   display: flex;
+  justify-content: center;
+  margin-top: 10vh;
   flex-direction: column;
   padding: 1.75vw 6.25vh;
-  height: 100%;
+  height: 105%;
   border-radius: 0.4vw;
   backdrop-filter: blur(25px);
-  background: rgba(60, 1, 135, 0.3);
-  opacity: 0.4;
+  background: linear-gradient(180deg, rgba(245, 63, 161, 0) 0%, #8f245e 60%);
+  opacity: 0.7;
   transition: opacity 0.8s ease-out;
+  background-image: url("../img/bg/bg-dust-purp-12.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .needed_col__wrapper .needed_col:hover {
   opacity: 1;
 }
-
+.needed_col__title {
+  margin-bottom: 1.5vh;
+}
 .needed__image {
-  position: relative;
+  position: fixed;
   width: 13vw;
-  left: 3.2vw;
-  bottom: 10vh;
+  left: 6.2vw;
+  bottom: 30vh;
 }
 .needed__image.figma {
   width: 10vw;
   margin: 2.5vh 0;
+  left: 7.3vw;
 }
 
 .section__ads {
@@ -6853,12 +6867,14 @@ body p.stats__desc--2 {
   opacity: 1;
 }
 
-.section_5_blure__left {
+.section_5_blure__left,
+.bg-blure-container {
   opacity: 0;
   transform: translateX(3vw) scale(1.05);
   transition: opacity 1s ease-out, transform 1s ease-out;
 }
-.section_5.active .section_5_blure__left {
+.section_5.active .section_5_blure__left,
+.section_5.active .bg-blure-container {
   opacity: 1;
   transform: translateX(0) scale(1);
 }
@@ -6881,12 +6897,4 @@ body p.stats__desc--2 {
 }
 .section_13.active .background-img {
   transform: translateX(0) scale(1);
-}
-.bg-section-card {
-  position: absolute;
-  z-index: -1;
-  width: 150%;
-  height: 48%;
-  top: 15vh;
-  left: -9vw;
 }
