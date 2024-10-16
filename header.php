@@ -18,8 +18,7 @@
     wp_register_style('stats', get_template_directory_uri() . '/css/stats.css?v=19', array(), '1.0', 'screen');
   }
   wp_register_style('style', get_template_directory_uri() . '/css/style.css?v=71', array(), '1.0', 'screen'); 
-  wp_register_style('background', get_template_directory_uri() . '/css/background.css?', array(), '1.0', 'screen'); 
-  wp_register_style('main', get_template_directory_uri() . '/css/main.css?', array(), '1.0', 'screen'); 
+  wp_register_style('background', get_template_directory_uri() . '/css/background.css?', array(), '1.0', 'screen');  
 
   // Подключаю стили
   wp_enqueue_style('normalize');

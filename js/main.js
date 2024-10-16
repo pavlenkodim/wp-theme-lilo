@@ -1319,17 +1319,17 @@ $(document).ready(function () {
       $(".optimization__creative").addClass("active");
     });
 
-    window.addEventListener("message", function (e) {
-      if (e.data.includes("change-slide")) {
-        if ($(".optimization__item.active").length > 0) {
-          $(".optimization__item.active").removeClass("active");
-        }
-      }
-      if (e.data.includes("click")) {
-        var click = parseInt(e.data.split("-")[1]);
-        $(".optimization__item--" + click).addClass("active");
-      }
-    });
+    // window.addEventListener("message", function (e) {
+    //   if (e.data.includes("change-slide")) {
+    //     if ($(".optimization__item.active").length > 0) {
+    //       $(".optimization__item.active").removeClass("active");
+    //     }
+    //   }
+    //   if (e.data.includes("click")) {
+    //     var click = parseInt(e.data.split("-")[1]);
+    //     $(".optimization__item--" + click).addClass("active");
+    //   }
+    // });
 
     $(".brand__iframe").load(function () {
       $(".brand__right").removeClass("loading");

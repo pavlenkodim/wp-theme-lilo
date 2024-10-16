@@ -64,7 +64,7 @@ Template Post Type: page
       </div>
     </section>
     <section class="section section_2" data-slide="2">
-      <div class="wrapper desktop_video__wrapper">
+      <div class="wrapper">
         <div class="container-columns">
           <div class="section2__column section2__column-twitch">
               <img class="shadow-purp" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_2/shadow purp.png" alt="" />
@@ -478,7 +478,7 @@ Template Post Type: page
       </div>
     </section>
     <section class="section section_9 custom-bg" data-slide="9">
-      <div class="wrapper brand__wrapper">
+      <div class="wrapper">
         <div class="section_7-streem">
           <video class="streem streem_8" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s3.mp4" > </video>
           <div class="section4__info__wrapper">
