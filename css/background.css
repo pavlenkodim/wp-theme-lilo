@@ -326,12 +326,16 @@
   border-radius: 0.4vw;
   background: rgba(60, 1, 135, 0.3);
   background-image: url("../img/bg/dust-purp-bg-blure-container-left.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .blure_container.purp-right {
   backdrop-filter: blur(25px);
   border-radius: 0.4vw;
   background: rgba(60, 1, 135, 0.3);
   background-image: url("../img/bg/dust-purp-bg-blure-container-right.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .section_5 .bg-blure-container {

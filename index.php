@@ -167,6 +167,22 @@ Template Post Type: page
           </div>
         </div>
         <div class="views-in-streem animate-views">
+          <div class="cirkl-animated left-cirkl">
+            <div class="cirkl-out one"></div>
+            <div class="cirkl-mid one"></div>
+            <div class="cirkl-in one"></div>
+            <div class="cirkl-out two"></div>
+            <div class="cirkl-mid two"></div>
+            <div class="cirkl-in two"></div>
+          </div>
+          <div class="cirkl-animated right-cirkl">
+            <div class="cirkl-out one"></div>
+            <div class="cirkl-mid one"></div>
+            <div class="cirkl-in one"></div>
+            <div class="cirkl-out two"></div>
+            <div class="cirkl-mid two"></div>
+            <div class="cirkl-in two"></div>
+          </div>
           <div class="views-count"><video src="<?php echo get_stylesheet_directory_uri(); ?>/img/counter-live-view.mp4" autoplay muted loop></video></div>
           <div class="live-streem">
             <svg width="91" height="26" viewBox="0 0 91 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -333,17 +349,23 @@ Template Post Type: page
               </div>
             </div>
           </div>
+          <img class="line-to-left" src="<?php echo get_stylesheet_directory_uri(); ?>/img/line-to-left.svg" alt="">
           <img class="dust-up for-video" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/dust up.png" alt="">
           <div class="ads_carusel__vertical">
-            <video class="streem streem_6" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/lilo_anim.mp4" > </video>
-            <video class="streem streem_6" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s4.mp4" > </video>
-            <video class="streem streem_6" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s3.mp4" > </video>
+            <div class="video-border">
+              <video class="streem streem_6" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/lilo_anim.mp4" > </video>
+            </div>
+            <div class="video-border">
+              <video class="streem streem_6" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s4.mp4" > </video>
+            </div>
+            <div class="video-border">
+              <video class="streem streem_6" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s3.mp4" > </video>
+            </div>
           </div>
           <img class="dust-down for-video" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/dust down.png" alt="">
         </div>
 
         <div class="background_smoke">
-          <!-- <img class="bg" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg1.png" alt=""> -->
           <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 19-blue.png" alt="" />
           <img id="shadow_purp" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_purp.svg" alt="" />
           <img id="shadow_blue" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_blue.svg" alt="" />
@@ -369,7 +391,10 @@ Template Post Type: page
     <section class="section section_7" data-slide="7">
       <div class="wrapper">
         <div class="section_7-streem">
-          <video class="streem streem_7" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s4.mp4" > </video>
+          <img class="line-to-right" src="<?php echo get_stylesheet_directory_uri(); ?>/img/line-to-right.svg" alt="">
+          <div class="video-border">
+            <video class="streem streem_7" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s4.mp4" > </video>
+          </div>
           <div class="section4__info__wrapper">
             <div class="slide_title__right">
               <h2 class="section4__title">In-Stream Pre-Roll</h2>
@@ -425,7 +450,10 @@ Template Post Type: page
     <section class="section section_8 custom-bg" data-slide="8">
       <div class="wrapper eye__wrapper">
         <div class="section_7-streem">
-          <video class="streem streem_8" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s4.mp4" > </video>
+          <img class="line-to-right" src="<?php echo get_stylesheet_directory_uri(); ?>/img/line-to-right.svg" alt="">
+          <div class="video-border">
+            <video class="streem streem_8" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s4.mp4" > </video>
+          </div>
           <div class="section4__info__wrapper">
             <div class="slide_title__right">
               <h2 class="section4__title">Interactive Bar</h2>
@@ -480,7 +508,10 @@ Template Post Type: page
     <section class="section section_9 custom-bg" data-slide="9">
       <div class="wrapper">
         <div class="section_7-streem">
-          <video class="streem streem_8" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s3.mp4" > </video>
+          <img class="line-to-right" src="<?php echo get_stylesheet_directory_uri(); ?>/img/line-to-right.svg" alt="">
+          <div class="video-border">
+            <video class="streem streem_8" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s3.mp4" > </video>
+          </div>
           <div class="section4__info__wrapper">
             <div class="slide_title__right">
               <h2 class="section4__title">Overlay banner</h2>
@@ -537,7 +568,10 @@ Template Post Type: page
     <section class="section section_10 custom-bg" data-slide="10">
       <div class="wrapper sales__wrapper">
         <div class="section_7-streem">
-          <video class="streem streem_8" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s4.mp4" > </video>
+          <img class="line-to-right" src="<?php echo get_stylesheet_directory_uri(); ?>/img/line-to-right.svg" alt="">
+          <div class="video-border">
+            <video class="streem streem_8" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s4.mp4" > </video>
+          </div>
           <div class="section4__info__wrapper">
             <div class="slide_title__right">
               <h2 class="section4__title">Banner</h2>
@@ -592,6 +626,7 @@ Template Post Type: page
 
     <section class="section section_11" data-slide="11">
       <div class="wrapper">
+        <div>
           <div class="flame_block_with_img_outline top__left">
             <img class="img__outline_planet" src="<?php echo get_stylesheet_directory_uri(); ?>/img/cyber_planet.png" alt="">
             <div class="text_flame_block">
@@ -617,6 +652,7 @@ Template Post Type: page
               </p>
             </div>
           </div>
+        </div>
         
         <div class="background">
         </div>
