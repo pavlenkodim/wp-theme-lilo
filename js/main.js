@@ -41,6 +41,29 @@ $(document).ready(function () {
   }
   hideHeader();
 
+  $(".ads_info__card").click(function () {
+    switch ($(this).data("format")) {
+      case "in-stream":
+        toSlide(7);
+        break;
+      case "interactive-bar":
+        toSlide(8);
+        break;
+      case "overlay-banner":
+        toSlide(9);
+        break;
+      case "banner":
+        toSlide(10);
+        break;
+    }
+  });
+
+  function toSlide(slide) {
+    $(".section").removeClass("active");
+    $(".section[data-slide='" + slide + "']").addClass("active");
+    change();
+  }
+
   // Chenge title on slide
   function chengeTitle(active) {
     let title = $(".title__head")[0];

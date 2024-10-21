@@ -1778,7 +1778,7 @@ input[type="number"] {
   padding: 6.5vh 3.9vw;
   font-weight: 500;
   color: #fff;
-  opacity: 0.6;
+  opacity: 1;
   background-image: url("/wp-content/themes/wp-theme-lilo/img/cloud_btn.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -1788,7 +1788,7 @@ input[type="number"] {
   transition: transform 1s ease-out;
 }
 .btn__blue:hover {
-  opacity: 1;
+  transform: scale(1.1);
 }
 
 .section_12.active .btn__blue,
@@ -2300,5 +2300,5 @@ input[type="number"] {
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 0;
+  z-index: 0 !important;
 }

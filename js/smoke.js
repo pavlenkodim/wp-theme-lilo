@@ -46,7 +46,7 @@ function init() {
 
   let smokeGeo = new THREE.PlaneGeometry(500, 500);
 
-  const borderSize = 0.2; // 20% от края экрана
+  const borderSize = 0.3; // 20% от края экрана
   const screenWidth = frustumSize * aspect;
   const screenHeight = frustumSize;
 
@@ -55,7 +55,7 @@ function init() {
 
   // Настройки для каждой части экрана
   const screenParts = {
-    top: { count: 10, color: leftColor },
+    top: { count: 0, color: leftColor },
     bottom: { count: 50, color: leftColor },
     left: { count: 30, color: leftColor },
     right: { count: 80, color: rightColor },
@@ -118,11 +118,13 @@ function animate() {
   requestAnimationFrame(animate);
 
   smokeParticles.forEach((particle) => {
-    particle.rotation.z += 0.001;
+    // Увеличиваем скорость вращения частиц
+    particle.rotation.z += 0.003; // было 0.001, увеличиваем в 3 раза
+
     particle.position.x +=
       Math.sin(Date.now() * 0.001 + particle.position.x * 0.01) * 0.1;
     particle.position.y +=
-      Math.cos(Date.now() * 0.002 + particle.position.y * 0.01) * 0.1;
+      Math.cos(Date.now() * 0.001 + particle.position.y * 0.01) * 0.1;
   });
 
   renderer.render(scene, camera);
