@@ -30,17 +30,13 @@
 .woman_vr {
   bottom: 0;
   right: 0;
-  opacity: 0.5;
+  opacity: 1;
   transition: opacity 0.3s ease;
 }
 
 .woman_vr_blure {
   bottom: 0;
   right: 0;
-}
-
-.woman_vr:hover {
-  opacity: 1;
 }
 
 #shadow_purp {

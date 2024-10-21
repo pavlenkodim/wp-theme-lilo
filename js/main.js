@@ -110,21 +110,6 @@ $(document).ready(function () {
     console.log("Your browser version is capable with the website");
   }
 
-  /*function moveFollowPath(){
-    var path = anime.path('#myPath');
-    var easings = ['linear', 'easeInCubic', 'easeOutCubic', 'easeInOutCubic'];
-    var motionPath = anime({
-      targets: '.head__lighter',
-      translateX: path('x'),
-      translateY: path('y'),
-      rotate: path('angle'),
-      easing: function (el, i) {
-        return easings[i];
-      },
-      duration: 10000,
-      loop: true
-    });
-  }*/
   function load() {
     if ($(".head").length > 0) {
       //moveFollowPath();
@@ -307,48 +292,7 @@ $(document).ready(function () {
     window.onscroll = function () {
       scroll3D2(document.documentElement.scrollTop);
     };
-    var devflag = 0;
-    /*$('.menu__item--3').click(function(){
-      if(devflag===0){
-        devflag=1;
-          var lazyElements = $('.lazy-load');
-          var elementsLoaded = 0;
-          lazyElements.each(function() {
-            var $element = $(this);
-            if ($element.is('img')) {
-              var dataSrc = $element.attr('data-src');
-              if (dataSrc) {
-                $element.on('load', function() {
-                  elementsLoaded++;
-                  if(elementsLoaded === lazyElements.length){
-                    displayDev();
-                  }
-                });
-                $element.attr('src', dataSrc);
-              }
-            }
-            if ($element.is('video')) {
-              var dataSrc = $element.attr('data-src');
-              if (dataSrc) {
-                $element.on('loadedmetadata', function(){
-                  elementsLoaded++;
-                  if(elementsLoaded === lazyElements.length){
-                    displayDev();
-                  }
-                });
-                $element.attr('src', dataSrc);
-                $element.get(0).play();
-              }
-            }
-          });
-        //});
-        $('.head').addClass('dev-active');
-        $('.menu').addClass('dev-active');
-        $('.fullscreen').addClass('dev-active');
-        $('.menu').addClass('dev');
-        scroll3D2(0);
-      }
-    });*/
+
     $(".dev-back").click(function () {
       devflag = 0;
       $(".footer").addClass("active");
@@ -375,18 +319,6 @@ $(document).ready(function () {
       }, 1800);
       scroll3D2(0);
     });
-    /*let soundButton = document.querySelector('.soundbutton'),
-        audio = document.querySelector('.audio')
-    soundButton.addEventListener('click', e => {
-      soundButton.classList.toggle('paused')
-      audio.paused ? audio.play() : audio.pause()
-    })
-    window.onfocus = function() {
-      soundButton.classList.contains('paused') ? audio.pause() : audio.play()
-    }
-    window.onblur = function(){
-      audio.pause()
-    }*/
   }
 
   const setupExample4 = () => {
@@ -503,8 +435,6 @@ $(document).ready(function () {
           .slideUp();
         $(this).closest(".creative__cat").removeClass("active");
       } else {
-        //$('.creative__cat.active').find('.creative__cat--list').slideUp();
-        //RemoveActive($('.creative__cat'));
         $(this)
           .closest(".creative__cat")
           .find(".creative__cat--list")
@@ -732,7 +662,6 @@ $(document).ready(function () {
       }, 300);
     }
     function prepareClient(client) {
-      //if(!(client.hasClass('active'))){
       var clientName = client.attr("data-client");
       var clientType = client.attr("data-type");
       RemoveActive($(".creative__cat--item"));
@@ -842,7 +771,6 @@ $(document).ready(function () {
     }
     curItem();
     function setActiveTheme(obj3) {
-      //$('.theme__header').click(function(){
       if (obj3.closest(".theme").hasClass("active")) {
         obj3.closest(".theme").find(".theme__list").slideUp();
         obj3.closest(".theme").removeClass("active");
@@ -852,7 +780,6 @@ $(document).ready(function () {
         obj3.closest(".theme").find(".theme__list").slideDown();
         obj3.closest(".theme").addClass("active");
       }
-      //});
     }
     $(".theme__header").click(function () {
       setActiveTheme($(this));
@@ -957,26 +884,10 @@ $(document).ready(function () {
     $(".form :input").on("input", function () {
       Validator();
     });
-    //$("[name='email']").inputmask('email');
     $('[name="phone"]').inputmask("+7 (999) 999-99-99");
     $('[name="username"]').inputmask("@***************************", {
       placeholder: "",
     });
-    /*$(".form__submit").click(function(e) {
-        e.preventDefault(); // Prevent form submission
-        var allFieldsFilled = true;
-        $(".form [required]").each(function() {
-          if ($(this).val() === '') {
-            allFieldsFilled = false;
-            return false; // Exit the loop if a required field is empty
-          }
-        });
-        if(allFieldsFilled){
-          $('.form').submit();
-        }else{
-          alert("Please fill in all required fields!");
-        }
-      });*/
   }
   if ($(".copy").length > 0) {
     $(".copy").each(function () {
@@ -1319,18 +1230,6 @@ $(document).ready(function () {
       $(".optimization__creative").addClass("active");
     });
 
-    // window.addEventListener("message", function (e) {
-    //   if (e.data.includes("change-slide")) {
-    //     if ($(".optimization__item.active").length > 0) {
-    //       $(".optimization__item.active").removeClass("active");
-    //     }
-    //   }
-    //   if (e.data.includes("click")) {
-    //     var click = parseInt(e.data.split("-")[1]);
-    //     $(".optimization__item--" + click).addClass("active");
-    //   }
-    // });
-
     $(".brand__iframe").load(function () {
       $(".brand__right").removeClass("loading");
       $(this).addClass("active");
@@ -1401,9 +1300,7 @@ $(document).ready(function () {
         }, Math.floor(Math.random() * 4000) + 2000);
       });
     }
-    //setTimeout(function(){
     setInterval(animateImages, 6000);
-    //},2000);
 
     const typingElements = $(".printing");
     const typingSpeed = 50;
