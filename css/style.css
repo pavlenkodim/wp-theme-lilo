@@ -883,7 +883,7 @@ input[type="number"] {
   position: relative;
   overflow: hidden;
   scroll-snap-stop: normal;
-  transition: 0.2s;
+  transition: opacity 1s ease-out, transform 1s ease-out;
   opacity: 0;
   pointer-events: none;
   position: absolute;
@@ -1356,8 +1356,32 @@ input[type="number"] {
   padding-top: 1.5vw;
   font-size: 2.5em;
   color: #ffffff;
-  transition-duration: 0.63s;
+  transition: opacity 0.3s ease;
+  position: relative;
 }
+
+.title__head::after {
+  content: attr(data-content);
+  position: absolute;
+  top: 1.5vw;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.title__head.changing {
+  opacity: 0;
+}
+
+.title__head.changing::after {
+  opacity: 0;
+}
+
+.title__head.changed::after {
+  opacity: 1;
+}
+
 #follow_new_client {
   color: #8f44ff;
   font-weight: 700;

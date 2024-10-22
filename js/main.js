@@ -1,6 +1,6 @@
 $(document).ready(function () {
   const TITLES = [
-    "Lilo",
+    " ",
     "Платформы",
     "Наша сеть",
     "Контент всегда в топе",
@@ -12,8 +12,12 @@ $(document).ready(function () {
     "Форматы",
     "Преимущества работы с Lilo",
     "Что нужно для запуска?",
-    "Запуск",
+    " ",
   ];
+
+  if (window.updateSmokeForSlide) {
+    window.updateSmokeForSlide($(".section.active").data("slide"));
+  }
 
   // remove logo in head
   function hideHeader() {
@@ -66,8 +70,16 @@ $(document).ready(function () {
 
   // Chenge title on slide
   function chengeTitle(active) {
-    let title = $(".title__head")[0];
-    title.textContent = TITLES[active - 1];
+    const titleElement = document.querySelector(".title__head");
+    const newText = TITLES[active - 1];
+
+    titleElement.setAttribute("data-content", newText);
+    titleElement.classList.add("changing");
+
+    setTimeout(() => {
+      titleElement.textContent = newText;
+      titleElement.classList.remove("changing");
+    }, 630);
   }
 
   //Удаление активного элемента в рамках селектора
@@ -1051,6 +1063,11 @@ $(document).ready(function () {
             $(".section.active").data("slide") +
             '"]'
         ).addClass("active");
+
+        if (window.updateSmokeForSlide) {
+          window.updateSmokeForSlide($(".section.active").data("slide"));
+        }
+
         if ($(".section.active").find(".desktop_video--frame").length > 0) {
           $(".desktop_video--top").addClass("loading");
           setCreative(1);
