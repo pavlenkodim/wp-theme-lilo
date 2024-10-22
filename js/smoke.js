@@ -17,11 +17,14 @@ function init() {
 
   const aspect = window.innerWidth / window.innerHeight;
   const frustumSize = 1000;
+  const width = frustumSize * aspect;
+  const height = frustumSize;
+
   camera = new THREE.OrthographicCamera(
-    (frustumSize * aspect) / -2,
-    (frustumSize * aspect) / 2,
-    frustumSize / 2,
-    frustumSize / -2,
+    width / -2,
+    width / 2,
+    height / 2,
+    height / -2,
     1,
     2000
   );
@@ -52,9 +55,9 @@ function init() {
 
   let smokeGeo = new THREE.PlaneGeometry(500, 500);
 
-  const borderSize = 0.3; // 20% от края экрана
-  const screenWidth = frustumSize * aspect;
-  const screenHeight = frustumSize;
+  const borderSize = 0.3; // 30% от края экрана
+  const screenWidth = width;
+  const screenHeight = height;
 
   const leftColor = new THREE.Color(0x2028d1); // Синий
   const rightColor = new THREE.Color(0x8a2be2); // Фиолетовый
@@ -63,12 +66,13 @@ function init() {
     // Очищаем существующие частицы
     smokeParticles.forEach((particle) => scene.remove(particle));
     smokeParticles = [];
+
     // Настройки для каждой части экрана
     const screenParts = {
       top: { count: 0, color: leftColor },
-      bottom: { count: 50, color: leftColor },
+      bottom: { count: Math.floor(50 * aspect), color: leftColor },
       left: { count: 30, color: leftColor },
-      right: { count: 80, color: rightColor },
+      right: { count: Math.floor(80 * aspect), color: rightColor },
     };
 
     Object.entries(screenParts).forEach(([part, settings]) => {
@@ -187,12 +191,17 @@ function animate() {
 function onWindowResize() {
   const aspect = window.innerWidth / window.innerHeight;
   const frustumSize = 1000;
+  const width = frustumSize * aspect;
+  const height = frustumSize;
 
-  camera.left = (frustumSize * aspect) / -2;
-  camera.right = (frustumSize * aspect) / 2;
-  camera.top = frustumSize / 2;
-  camera.bottom = frustumSize / -2;
+  camera.left = width / -2;
+  camera.right = width / 2;
+  camera.top = height / 2;
+  camera.bottom = height / -2;
 
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
+
+  // Пересоздаем частицы при изменении размера окна
+  createSmokeParticles();
 }

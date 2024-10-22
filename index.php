@@ -181,7 +181,7 @@ Template Post Type: page
                 80% <span>зрителей</span>
               </div>
               <div class="card_subtitle">
-                Выбирают трансляцию которая находится в топе
+                Выбирают трансляцию <br> которая находится в топе
               </div>
             </div>
             <img class="bg-section-card section-4-card-1" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg-blure-card.png" alt="">
@@ -425,7 +425,7 @@ Template Post Type: page
                 1% - <span>CTR</span>
               </div>
               <div class="card_subtitle">
-                Переходы со стрима на страницу продукта
+                Переходы со стрима <br> на страницу продукта
               </div>
             </div>
             <img class="bg-section-card section-10-card-1" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg-blure-card.png" alt="">
