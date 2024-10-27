@@ -147,7 +147,21 @@ Template Post Type: page
             <div class="cirkl-mid two"></div>
             <div class="cirkl-in two"></div>
           </div>
-          <div class="views-count"><video src="<?php echo get_stylesheet_directory_uri(); ?>/img/counter-live-view.mp4" autoplay muted loop></video></div>
+          <div class="views-count">
+            <span class="views-count-icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" stroke="#ff8e81" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M20.5899 22C20.5899 18.13 16.7399 15 11.9999 15C7.25991 15 3.40991 18.13 3.40991 22" stroke="#ff8e81" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <div class="user-counter-wrapper">
+              <div class="user-counter">
+                <div class="digit">1</div>
+                <!-- <div class="digit">2</div>
+                <div class="digit">3</div> -->
+              </div>
+            </div>
+          </div>
           <div class="live-streem">
             <svg width="91" height="26" viewBox="0 0 91 26" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="0.414551" y="0.207031" width="89.8723" height="25.3757" rx="5.2866" fill="#EB0400"/>
@@ -264,7 +278,9 @@ Template Post Type: page
           </div>
           <img class="line-to-left" src="<?php echo get_stylesheet_directory_uri(); ?>/img/line-to-left.svg" alt="">
           <img class="dust-up for-video" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/dust up.png" alt="">
-          <div class="ads_carusel__vertical">
+          <img class="dust-down for-video" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/dust down.png" alt="">
+        </div>
+        <div class="ads_carusel__vertical">
             <div class="video-border">
               <video class="streem streem_6" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/lilo_anim.mp4" > </video>
             </div>
@@ -275,9 +291,6 @@ Template Post Type: page
               <video class="streem streem_6" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s3.mp4" > </video>
             </div>
           </div>
-          <img class="dust-down for-video" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/dust down.png" alt="">
-        </div>
-
         <div class="background_smoke">
           <img id="shadow_purp" style="opacity: 0.3;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_purp.svg" alt="" />
           <img id="shadow_blue" style="opacity: 0.3;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_blue.svg" alt="" />

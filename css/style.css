@@ -1600,11 +1600,15 @@ input[type="number"] {
   height: 100vh;
   width: 100vw;
 }
+.streem {
+  object-fit: cover;
+}
 
 .streem_3 {
   width: 44vw;
   transform: translateX(-10vh) scale(1.05);
   transition: transform 1s ease-out;
+  object-fit: cover;
 }
 .section_3.active .streem_3 {
   transform: translateX(0) scale(1);
@@ -1706,10 +1710,13 @@ input[type="number"] {
   gap: 1.71vh;
 }
 .streem_4 {
-  width: 48vw;
+  width: 100%;
+  height: 100%;
   opacity: 0;
   transform: scale(1.05);
   transition: opacity 1s ease-out, transform 1s ease-out;
+  margin-right: 2vw;
+  object-fit: cover;
 }
 .section_4.active .streem_4 {
   opacity: 1;
@@ -1847,6 +1854,7 @@ input[type="number"] {
 
 .streem_7 {
   width: 48vw;
+  height: auto;
   opacity: 0;
   transform: scale(1.05);
   transition: opacity 1s ease-out, transform 1s ease-out;
@@ -1894,6 +1902,7 @@ input[type="number"] {
 
 .streem_8 {
   width: 47vw;
+  height: auto;
   opacity: 0;
   transform: scale(1.05);
   transition: opacity 1s ease-out, transform 1s ease-out;
@@ -1990,7 +1999,7 @@ input[type="number"] {
 }
 
 .needed_col__wrapper:hover .needed_col {
-  opacity: 0.7;
+  opacity: 0.5;
 }
 
 .needed_col__wrapper .needed_col:hover {
@@ -2028,13 +2037,20 @@ input[type="number"] {
 }
 .ads_carusel__vertical {
   position: fixed;
-  width: 42vw;
+  width: 45vw;
   height: 100%;
   right: 8.8vw;
-  bottom: 30vh;
+  /* bottom: 30vh; */
   opacity: 0;
   transform: scale(1.05);
   transition: opacity 1s ease-out, transform 1s ease-out;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.ads_carusel__vertical::-webkit-scrollbar {
+  display: none;
 }
 .video-border {
   box-sizing: content-box;
@@ -2139,15 +2155,57 @@ input[type="number"] {
   scale: 1.2;
   transform: translateY(-10vh) translateX(-3vw);
   transition: opacity 1s ease-out, transform 1s ease-out;
+  border: 1px solid #ffffff4d;
 }
 .section_3.active .views-in-streem {
   opacity: 1;
   transform: translateY(0) translateX(0);
   scale: 1;
 }
-.views-count video {
+.views-count {
+  display: flex;
+  align-items: center;
+  justify-content: end;
   width: 5vw;
+  height: 4vh;
+  color: #ff8e81;
+  font-weight: 500;
+  font-size: 1.1vw;
 }
+.views-count-icon svg {
+  margin-right: 0.3vw;
+  width: 1.3vw;
+  height: 1.3vw;
+}
+
+.user-counter-wrapper {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.user-counter {
+  display: flex;
+  position: relative;
+}
+.digit {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  position: relative;
+}
+.digit-new {
+  position: absolute;
+  visibility: visible;
+  transform: translateY(100%);
+}
+.digit-up {
+  transform: translateY(-100%) !important;
+  opacity: 0;
+}
+.digit-enter {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 .live-streem {
   position: absolute;
   top: 5.2vh;
@@ -2197,9 +2255,9 @@ input[type="number"] {
 .line-to-left {
   position: absolute;
   opacity: 0;
-  top: 22vh;
+  top: 24.5vh;
   left: 37.3vw;
-  width: 12vw;
+  width: 9vw;
   transform: translateX(-3vw) scale(1.05);
   transition: opacity 1s ease-out, transform 1s ease-out;
 }

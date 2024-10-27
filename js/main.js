@@ -19,6 +19,44 @@ $(document).ready(function () {
     window.updateSmokeForSlide($(".section.active").data("slide"));
   }
 
+  // Animatin Views counter
+  function updateCounter(newNumber) {
+    const counter = document.querySelector(".user-counter");
+    const currentDigits = Array.from(counter.querySelectorAll(".digit"));
+
+    const newDigitsArray = String(newNumber)
+      .split("")
+      .map((num) => {
+        const newDigitElement = document.createElement("div");
+        newDigitElement.classList.add("digit", "digit-new");
+        newDigitElement.textContent = num;
+        return newDigitElement;
+      });
+
+    newDigitsArray.forEach((newDigit, index) => {
+      counter.appendChild(newDigit);
+
+      if (currentDigits[index]) {
+        currentDigits[index].classList.add("digit-up");
+      }
+
+      setTimeout(() => {
+        newDigit.classList.remove("digit-new");
+        newDigit.classList.add("digit-enter");
+        if (currentDigits[index]) {
+          currentDigits[index].remove();
+        }
+      }, 200); // Speed animation
+    });
+  }
+
+  let counterValue = 1;
+
+  setInterval(() => {
+    counterValue += 19;
+    updateCounter(counterValue);
+  }, 1000);
+
   // remove logo in head
   function hideHeader() {
     let activeSlide;
