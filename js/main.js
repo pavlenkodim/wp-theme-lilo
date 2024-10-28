@@ -122,9 +122,7 @@ $(document).ready(function () {
 
   // Lazy load videos
   function LazyLoadVideo(activeSlide) {
-    let lazyVideos = [].slice.call(document.querySelectorAll("video.lazy")); // Получаем все видео на странице
-
-    console.log(lazyVideos);
+    let lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
 
     function playVideo(video) {
       for (let source in video.children) {
