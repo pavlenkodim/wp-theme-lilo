@@ -2424,7 +2424,7 @@ input[type="number"] {
     width: 90%;
   }
   .section_3__info {
-    margin-top: 5vh;
+    margin-top: 1vh;
   }
   .streem_4 {
     width: 80%;
@@ -2476,6 +2476,9 @@ input[type="number"] {
   .section_2 .shadow-blue {
     top: -12vh;
   }
+  .section_3__info {
+    margin-top: 5vh;
+  }
   .streem_4 {
     width: 70%;
     height: 70%;
@@ -2514,6 +2517,9 @@ input[type="number"] {
   }
   .section_2 .shadow-blue {
     top: -10vh;
+  }
+  .section_3__info {
+    margin-top: 15vh;
   }
   .streem_4 {
     width: 60%;
