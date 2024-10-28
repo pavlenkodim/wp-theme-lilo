@@ -3,6 +3,12 @@ import * as THREE from "./three.module.min.js";
 let camera, scene, renderer;
 let smokeParticles = [];
 
+let isSecondSlideActive = false;
+let isFading = false;
+let isAppearing = false;
+let transitionStartTime = 0;
+const transitionDuration = 500; // 0.5 секунды в миллисекундах
+
 init();
 animate();
 
@@ -11,11 +17,14 @@ function init() {
 
   const aspect = window.innerWidth / window.innerHeight;
   const frustumSize = 1000;
+  const width = frustumSize * aspect;
+  const height = frustumSize;
+
   camera = new THREE.OrthographicCamera(
-    (frustumSize * aspect) / -2,
-    (frustumSize * aspect) / 2,
-    frustumSize / 2,
-    frustumSize / -2,
+    width / -2,
+    width / 2,
+    height / 2,
+    height / -2,
     1,
     2000
   );
@@ -46,70 +55,105 @@ function init() {
 
   let smokeGeo = new THREE.PlaneGeometry(500, 500);
 
-  const borderSize = 0.2; // 20% от края экрана
-  const screenWidth = frustumSize * aspect;
-  const screenHeight = frustumSize;
+  const borderSize = 0.3; // 30% от края экрана
+  const screenWidth = width;
+  const screenHeight = height;
 
-  const leftColor = new THREE.Color(0x2028d1); // Более яркий синий
-  const rightColor = new THREE.Color(0x8a2be2); // Более яркий фиолетовый (BlueViolet)
+  const leftColor = new THREE.Color(0x2028d1); // Синий
+  const rightColor = new THREE.Color(0x8a2be2); // Фиолетовый
 
-  // Настройки для каждой части экрана
-  const screenParts = {
-    top: { count: 10, color: leftColor },
-    bottom: { count: 50, color: leftColor },
-    left: { count: 30, color: leftColor },
-    right: { count: 80, color: rightColor },
-  };
+  function createSmokeParticles() {
+    // Очищаем существующие частицы
+    smokeParticles.forEach((particle) => scene.remove(particle));
+    smokeParticles = [];
 
-  Object.entries(screenParts).forEach(([part, settings]) => {
-    for (let p = 0; p < settings.count; p++) {
-      let x, y, z;
+    // Настройки для каждой части экрана
+    const screenParts = {
+      top: { count: 0, color: leftColor },
+      bottom: { count: Math.floor(50 * aspect), color: leftColor },
+      left: { count: 30, color: leftColor },
+      right: { count: Math.floor(80 * aspect), color: rightColor },
+    };
 
-      switch (part) {
-        case "top":
-          x = Math.random() * screenWidth - screenWidth / 2;
-          y = screenHeight / 2 - Math.random() * screenHeight * borderSize;
-          break;
-        case "bottom":
-          x = Math.random() * screenWidth - screenWidth / 2;
-          y = -screenHeight / 2 + Math.random() * screenHeight * borderSize;
-          break;
-        case "left":
-          x = -screenWidth / 2 + Math.random() * screenWidth * borderSize;
-          y = Math.random() * screenHeight - screenHeight / 2;
-          break;
-        case "right":
-          x = screenWidth / 2 - Math.random() * screenWidth * borderSize;
-          y = Math.random() * screenHeight - screenHeight / 2;
-          break;
+    Object.entries(screenParts).forEach(([part, settings]) => {
+      for (let p = 0; p < settings.count; p++) {
+        let x, y, z;
+
+        switch (part) {
+          case "top":
+            x = Math.random() * screenWidth - screenWidth / 2;
+            y = screenHeight / 2 - Math.random() * screenHeight * borderSize;
+            break;
+          case "bottom":
+            x = Math.random() * screenWidth - screenWidth / 2;
+            y = -screenHeight / 2 + Math.random() * screenHeight * borderSize;
+            break;
+          case "left":
+            x = -screenWidth / 2 + Math.random() * screenWidth * borderSize;
+            y = Math.random() * screenHeight - screenHeight / 2;
+            break;
+          case "right":
+            x = screenWidth / 2 - Math.random() * screenWidth * borderSize;
+            y = Math.random() * screenHeight - screenHeight / 2;
+            break;
+        }
+
+        z = Math.random() * 300 - 150;
+
+        let particleColor;
+        if (isSecondSlideActive) {
+          particleColor =
+            part === "left" || part === "top" || part === "bottom"
+              ? rightColor
+              : leftColor;
+        } else {
+          // Вычисляем цвет частицы на основе ее положения
+          const tx = (x + screenWidth / 2) / screenWidth;
+          const ty = (y + screenHeight / 2) / screenHeight;
+          const t = (tx + ty) / 2; // Среднее значение для плавного перехода
+          particleColor = new THREE.Color().lerpColors(
+            leftColor,
+            rightColor,
+            t
+          );
+        }
+
+        let smokeMaterial = new THREE.MeshLambertMaterial({
+          color: particleColor,
+          map: smokeTexture,
+          transparent: true,
+          opacity: 0.4,
+        });
+
+        let particle = new THREE.Mesh(smokeGeo, smokeMaterial);
+        particle.position.set(x, y, z);
+        particle.rotation.z = Math.random() * 360;
+        scene.add(particle);
+        smokeParticles.push(particle);
       }
+    });
+  }
 
-      z = Math.random() * 300 - 150;
+  createSmokeParticles();
 
-      // Вычисляем цвет частицы на основе ее положения
-      const tx = (x + screenWidth / 2) / screenWidth;
-      const ty = (y + screenHeight / 2) / screenHeight;
-      const t = (tx + ty) / 2; // Среднее значение для плавного перехода
-      const particleColor = new THREE.Color().lerpColors(
-        leftColor,
-        rightColor,
-        t
-      );
-
-      let smokeMaterial = new THREE.MeshLambertMaterial({
-        color: particleColor,
-        map: smokeTexture,
-        transparent: true,
-        opacity: 0.4,
-      });
-
-      let particle = new THREE.Mesh(smokeGeo, smokeMaterial);
-      particle.position.set(x, y, z);
-      particle.rotation.z = Math.random() * 360;
-      scene.add(particle);
-      smokeParticles.push(particle);
-    }
+  // Устанавливаем начальную прозрачность новых частиц в 0
+  smokeParticles.forEach((particle) => {
+    particle.material.opacity = 0;
   });
+
+  window.updateSmokeForSlide = function (slideNumber) {
+    isFading = true;
+    isAppearing = false;
+    transitionStartTime = Date.now();
+
+    setTimeout(() => {
+      isSecondSlideActive = slideNumber === 2;
+      createSmokeParticles();
+      isFading = false;
+      isAppearing = true;
+      transitionStartTime = Date.now();
+    }, transitionDuration);
+  };
 
   window.addEventListener("resize", onWindowResize, false);
 }
@@ -117,13 +161,29 @@ function init() {
 function animate() {
   requestAnimationFrame(animate);
 
+  const elapsedTime = Date.now() - transitionStartTime;
+  const transitionProgress = Math.min(elapsedTime / transitionDuration, 1);
+
   smokeParticles.forEach((particle) => {
-    particle.rotation.z += 0.001;
-    particle.position.x +=
-      Math.sin(Date.now() * 0.001 + particle.position.x * 0.01) * 0.1;
-    particle.position.y +=
-      Math.cos(Date.now() * 0.002 + particle.position.y * 0.01) * 0.1;
+    // Продолжаем вращение частиц независимо от состояния анимации
+    particle.rotation.z += 0.003;
+
+    if (isFading) {
+      particle.material.opacity = 0.4 * (1 - transitionProgress);
+    } else if (isAppearing) {
+      particle.material.opacity = 0.4 * transitionProgress;
+    } else {
+      // Движение частиц только в обычном состоянии
+      particle.position.x +=
+        Math.sin(Date.now() * 0.001 + particle.position.x * 0.01) * 0.1;
+      particle.position.y +=
+        Math.cos(Date.now() * 0.001 + particle.position.y * 0.01) * 0.1;
+    }
   });
+
+  if (isAppearing && transitionProgress === 1) {
+    isAppearing = false;
+  }
 
   renderer.render(scene, camera);
 }
@@ -131,12 +191,17 @@ function animate() {
 function onWindowResize() {
   const aspect = window.innerWidth / window.innerHeight;
   const frustumSize = 1000;
+  const width = frustumSize * aspect;
+  const height = frustumSize;
 
-  camera.left = (frustumSize * aspect) / -2;
-  camera.right = (frustumSize * aspect) / 2;
-  camera.top = frustumSize / 2;
-  camera.bottom = frustumSize / -2;
+  camera.left = width / -2;
+  camera.right = width / 2;
+  camera.top = height / 2;
+  camera.bottom = height / -2;
 
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
+
+  // Пересоздаем частицы при изменении размера окна
+  createSmokeParticles();
 }

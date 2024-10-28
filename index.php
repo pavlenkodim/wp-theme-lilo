@@ -43,25 +43,8 @@ Template Post Type: page
         <div class="background">
         </div>
         <div class="background_smoke">
-          <!-- <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 19-blue.png" alt="" /> -->
           <img id="shadow_purp" style="opacity: 0.1;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_purp.svg" alt="" />
           <img id="shadow_blue" style="opacity: 0.1;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_blue.svg" alt="" />
-          <!-- <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 18.png" alt="" />
-          <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 18-3.png" alt="" />
-          <img class="bg-wing-animated bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 18-4.png" alt="" />
-          <img class="bg-wing-animated left" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 18-5.png" alt="" />
-          <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 18-6.png" alt="" />
-          <img class="bg-wing-animated left" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 18-7.png" alt="" />
-          <img class="bg-wing-animated right top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 19.png" alt="" />
-          <img class="bg-wing-animated left top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 21.png" alt="" />
-          <img class="bg-wing-animated right bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 21-purpl.png" alt="" />
-          <img class="bg-wing-animated right" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 20.png" alt="" />
-          <img class="bg-wing-animated right bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 22.png" alt="" />
-          <img class="bg-wing-animated bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 23.png" alt="" />
-          <img class="bg-wing-animated top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 24.png" alt="" />
-          <img class="bg-wing-animated top right" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 25.png" alt="" />
-          <img class="bg-wing-animated right top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 26.png" alt="" />
-          <img class="bg-wing-animated right bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 27.png" alt="" /> -->
         </div>
       </div>
     </section>
@@ -69,7 +52,7 @@ Template Post Type: page
       <div class="wrapper">
         <div class="container-columns">
           <div class="section2__column section2__column-twitch">
-              <img class="shadow-purp" style="opacity: 0.4;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_2/shadow purp.png" alt="" />
+              <img class="shadow-purp" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_2/shadow purp.png" alt="" />
               <img class="twitch-bg-plaseholder twitch-opacity" src="<?php echo get_stylesheet_directory_uri(); ?>/img/twitch-bg.png" alt="">
               <img
                 class="twitch_logo streem_logo twitch-opacity"
@@ -86,11 +69,11 @@ Template Post Type: page
                 </div>
               </div>
               <div class="blure_container_btn twitch-opacity">
-                <button class="look_btn" id="look-twitch">Посмотреть формат</button>
+                <a class="look_btn" id="look-twitch" href="/" target="_blank">Посмотреть формат</a>
               </div>
             </div>
             <div class="section2__column section2__column-vkplay">
-              <img class="shadow-blue" style="opacity: 0.4;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_2/shadow blue.png" alt="" />
+              <img class="shadow-blue" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_2/shadow blue.png" alt="" />
               <img class="vklay-bg-plaseholder vkplay-opacity" src="<?php echo get_stylesheet_directory_uri(); ?>/img/vkplay-bg.png" alt="">
               <img
                 class="vkplay_logo streem_logo vkplay-opacity"
@@ -107,7 +90,7 @@ Template Post Type: page
                 </div>
               </div>
               <div class="blure_container_btn vkplay-opacity">
-                <button class="look_btn" id="look-vkplay">Посмотреть формат</button>
+                <a class="look_btn" id="look-vkplay" href="/" target="_blank">Посмотреть формат</a>
               </div>
             </div>
             <div class="descriptoin_slide">Средние значения в день*</div>
@@ -115,27 +98,6 @@ Template Post Type: page
         <img class="woman_vr2" src="<?php echo get_stylesheet_directory_uri(); ?>/img/pict_girl.png" alt="girl"/>
         <div class="background"></div>
         <div class="background_smoke">
-          <!-- <img class="bg-wing-animated top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_2/pngwing 18-1.png" alt="" />
-          <img class="bg-wing-animated left top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_2/pngwing 19-1.png" alt="" />
-          <img class="bg-wing-animated right bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_2/pngwing 19blue.png" alt="" />
-          <img class="bg-wing-animated left top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_2/pngwing 20-1.png" alt="" />
-          <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_2/pngwing 21-1.png" alt="" />
-          <img class="bg-wing-animated right bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_2/pngwing 18blue-cristal.png" alt="" />
-          
-          <img class="bg-wing-animated top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_2/pngwing 18.png" alt="" />
-          <img class="bg-wing-animated left top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_2/pngwing 19.png" alt="" />
-          <img class="bg-wing-animated left top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_2/pngwing 20.png" alt="" />
-          <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_2/pngwing 21.png" alt="" />
-          <img class="bg-wing-animated bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_2/pngwing 22.png" alt="" />
-          <img class="bg-wing-animated right bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_2/dust purp.png" alt="" />
-
-          <img class="bg-wing-animated right top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_2/pngwing 18blue.png" alt="" />
-          <img class="bg-wing-animated right bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_2/pngwing 18blue2.png" alt="" />
-          <img class="bg-wing-animated right bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_2/pngwing 18blue3.png" alt="" />
-          <img class="bg-wing-animated bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_2/pngwing 18blue4.png" alt="" />
-          <img class="bg-wing-animated right" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_2/pngwing 18blue5.png" alt="" />
-          <img class="bg-wing-animated right bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_2/pngwing 18blue6.png" alt="" /> -->
-
         </div>
       </div>
     </section>
@@ -185,7 +147,21 @@ Template Post Type: page
             <div class="cirkl-mid two"></div>
             <div class="cirkl-in two"></div>
           </div>
-          <div class="views-count"><video src="<?php echo get_stylesheet_directory_uri(); ?>/img/counter-live-view.mp4" autoplay muted loop></video></div>
+          <div class="views-count">
+            <span class="views-count-icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" stroke="#ff8e81" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M20.5899 22C20.5899 18.13 16.7399 15 11.9999 15C7.25991 15 3.40991 18.13 3.40991 22" stroke="#ff8e81" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <div class="user-counter-wrapper">
+              <div class="user-counter">
+                <div class="digit">1</div>
+                <!-- <div class="digit">2</div>
+                <div class="digit">3</div> -->
+              </div>
+            </div>
+          </div>
           <div class="live-streem">
             <svg width="91" height="26" viewBox="0 0 91 26" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="0.414551" y="0.207031" width="89.8723" height="25.3757" rx="5.2866" fill="#EB0400"/>
@@ -194,40 +170,25 @@ Template Post Type: page
           </div>
         </div>
         <div>
-          <video class="streem streem_3" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s3.mp4" > </video>
+          <video class="streem streem_3 lazy" autoplay muted loop poster="<?php echo get_stylesheet_directory_uri(); ?>/img/poster.png">
+            <source data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s3.mp4" type="video/mp4">
+          </video>
         </div>
       </div>
       <img class="girl_streem" src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_woman.png" alt="">
       <div class="background">
       </div>
       <div class="background_smoke">
-        <!-- <img class="bg" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg3.png" alt=""> -->
-        <!-- <img class="bg bg-sky" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg-sky.png" alt=""> -->
-          
-        <!-- <img class="bg-wing-animated left top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_3/pngwing 19.png" alt="" />
-        <img class="bg-wing-animated left top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_3/shadow blue.png" alt="" />
-        <img class="bg-wing-animated top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_3/pngwing 45.png" alt="" />
-
-        <img class="bg-wing-animated left" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_3/pngwing 18.png" alt="" />
-        <img class="bg-wing-animated left top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_3/pngwing 18-2.png" alt="" />
-        <img class="bg-wing-animated left top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_3/pngwing 18-3.png" alt="" />
-        <img class="bg-wing-animated top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_3/pngwing 18-4.png" alt="" />
-        <img class="bg-wing-animated left top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_3/pngwing 18-5.png" alt="" />
-        <img class="bg-wing-animated left top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_3/pngwing 18-6.png" alt="" />
-        <img class="bg-wing-animated left top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_3/pngwing 18-7.png" alt="" />
-        
-        <img class="bg-wing-animated bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_3/pngwing 40.png" alt="" />
-        <img class="bg-wing-animated bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_3/pngwing 41.png" alt="" />
-        <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_3/pngwing 42.png" alt="" />
-        <img class="bg-wing-animated bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_3/pngwing 43.png" alt="" />
-        <img class="bg-wing-animated bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_3/pngwing 46.png" alt="" />
-        <img class="bg-wing-animated bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_3/pngwing 47.png" alt="" /> -->
+        <img class="bg" style="opacity: 0.3;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_3/shadow blue.png" alt="">
+        <img class="bg bg-sky" style="z-index: -1;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg-sky.png" alt="">
         </div>
     </section>
     <section class="section section_4 custom-bg" data-slide="4">
       <div class="wrapper">
         <div class="section_4-streem">
-          <video class="streem streem_4" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s4.mp4" > </video>
+          <video class="streem streem_4 lazy" autoplay muted loop poster="<?php echo get_stylesheet_directory_uri(); ?>/img/poster2.png"> 
+            <source data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s4.mp4">
+          </video>
           <div class="section4__info__wrapper">
             <div class="slide_title__right">
               <h2 class="section4__title">Пребывание в топе</h2>
@@ -238,7 +199,7 @@ Template Post Type: page
                 80% <span>зрителей</span>
               </div>
               <div class="card_subtitle">
-                Выбирают трансляцию которая находится в топе
+                Выбирают трансляцию <br> которая находится в топе
               </div>
             </div>
             <img class="bg-section-card section-4-card-1" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg-blure-card.png" alt="">
@@ -255,26 +216,8 @@ Template Post Type: page
 
         </div>
         <div class="background_smoke">
-          <!-- <img class="bg" style="opacity: 0.6;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/shadow blue.png" alt="" />
-          <img class="bg" style="opacity: 0.6;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/shadow purp.png" alt="" /> -->
-
-          <!-- <img class="bg-wing-animated left top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 18.png" alt="" />
-          <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 18-2.png" alt="" />
-          <img class="bg-wing-animated size-h-full left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 18-3.png" alt="" />
-          <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 18-4.png" alt="" />
-          <img class="bg-wing-animated left top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 18-5.png" alt="" />
-          <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 18-6.png" alt="" />
-          <img class="bg-wing-animated top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 18-7.png" alt="" />
-          <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 19.png" alt="" />
-          <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 20.png" alt="" />
-          <img class="bg-wing-animated right top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 20-2.png" alt="" />
-          <img class="bg-wing-animated bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 21.png" alt="" />
-          <img class="bg-wing-animated left top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 21-1.png" alt="" />
-          <img class="bg-wing-animated right top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 21-2.png" alt="" />
-          <img class="bg-wing-animated bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 22.png" alt="" />
-          <img class="bg-wing-animated right bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 23.png" alt="" />
-          <img class="bg-wing-animated right top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 24.png" alt="" />
-          <img class="bg-wing-animated right bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 25.png" alt="" /> -->
+          <img class="bg" style="opacity: 0.3;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/shadow blue.png" alt="" />
+          <img class="bg" style="opacity: 0.3;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/shadow purp.png" alt="" />
         </div>
       </div>
     </section>
@@ -308,22 +251,8 @@ Template Post Type: page
       <div class="background">
       </div>
       <div class="background_smoke">
-        <!-- <img class="bg" style="opacity: 0.6;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_5/shadow blue.png" alt="" />
-        <img class="bg" style="opacity: 0.6;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_5/shadow purp.png" alt="" /> -->
-
-        <!-- <img class="bg-wing-animated top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_5/pngwing 18-1.png" alt="" />
-        <img class="bg-wing-animated left top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_5/pngwing 18-2.png" alt="" />
-        <img class="bg-wing-animated left top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_5/pngwing 18-3.png" alt="" />
-        <img class="bg-wing-animated left" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_5/pngwing 18-4.png" alt="" />
-        <img class="bg-wing-animated top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_5/pngwing 18-5.png" alt="" />
-        <img class="bg-wing-animated left top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_5/pngwing 18-6.png" alt="" />
-
-        <img class="bg-wing-animated right top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_5/pngwing 18.png" alt="" />
-        <img class="bg-wing-animated right" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_5/pngwing 19.png" alt="" />
-        <img class="bg-wing-animated right bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_5/pngwing 20.png" alt="" />
-        <img class="bg-wing-animated right bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_5/pngwing 21.png" alt="" />
-        <img class="bg-wing-animated bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_5/pngwing 22.png" alt="" />
-        <img class="bg-wing-animated bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_5/pngwing 23.png" alt="" /> -->
+        <img class="bg" style="opacity: 0.3;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_5/shadow blue.png" alt="" />
+        <img class="bg" style="opacity: 0.3;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_5/shadow purp.png" alt="" />
       </div>
     </section>
     <section class="section section_6 " data-slide="6">
@@ -333,19 +262,19 @@ Template Post Type: page
             <h2 class="ads_info__title">Разнообразие форматов для усиления эффекта</h2>
             <div class="ads_info__descript flame__descript">Запуск кампании сразу в нескольких форматах — это <b>гарантия увеличения охвата и вовлечённости.</b> Каждый формат привлекает внимание своей уникальной механикой, что помогает донести ваше сообщение до широкой аудитории и повысить его запоминаемость.</div>
             <div class="ads_info__cards_container">
-              <div class="ads_info__card block3__wrapper">
+              <div class="ads_info__card block3__wrapper" data-format="in-stream">
                 <h2>In-Stream <br> Pre-Roll</h2>
                 <img class="ads_info_cards_arrow" src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-up.svg" alt=">">
               </div>
-              <div class="ads_info__card block3__wrapper">
+              <div class="ads_info__card block3__wrapper" data-format="interactive-bar">
                 <h2>Interactive Bar</h2>
                 <img class="ads_info_cards_arrow" src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-up.svg" alt=">">
               </div>
-              <div class="ads_info__card block3__wrapper">
+              <div class="ads_info__card block3__wrapper" data-format="overlay-banner">
                 <h2>Overlay banner</h2>
                 <img class="ads_info_cards_arrow" src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-up.svg" alt=">">
               </div>
-              <div class="ads_info__card block3__wrapper">
+              <div class="ads_info__card block3__wrapper" data-format="banner">
                 <h2>Banner</h2>
                 <img class="ads_info_cards_arrow" src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-up.svg" alt=">">
               </div>
@@ -353,40 +282,28 @@ Template Post Type: page
           </div>
           <img class="line-to-left" src="<?php echo get_stylesheet_directory_uri(); ?>/img/line-to-left.svg" alt="">
           <img class="dust-up for-video" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/dust up.png" alt="">
-          <div class="ads_carusel__vertical">
-            <div class="video-border">
-              <video class="streem streem_6" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/lilo_anim.mp4" > </video>
-            </div>
-            <div class="video-border">
-              <video class="streem streem_6" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s4.mp4" > </video>
-            </div>
-            <div class="video-border">
-              <video class="streem streem_6" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s3.mp4" > </video>
-            </div>
-          </div>
           <img class="dust-down for-video" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/dust down.png" alt="">
         </div>
-
+        <div class="ads_carusel__vertical">
+            <div class="video-border">
+              <video class="streem streem_6 lazy" autoplay muted loop poster="<?php echo get_stylesheet_directory_uri(); ?>/img/poster3.png"> 
+                <source data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/lilo_anim.mp4">
+              </video>
+            </div>
+            <div class="video-border">
+              <video class="streem streem_6 lazy" autoplay muted loop poster="<?php echo get_stylesheet_directory_uri(); ?>/img/poster2.png"> 
+                <source data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s4.mp4">
+              </video>
+            </div>
+            <div class="video-border">
+              <video class="streem streem_6 lazy" autoplay muted loop poster="<?php echo get_stylesheet_directory_uri(); ?>/img/poster.png" > 
+                <source data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s3.mp4">
+              </video>
+            </div>
+          </div>
         <div class="background_smoke">
-          <!-- <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 19-blue.png" alt="" /> -->
-          <!-- <img id="shadow_purp" style="opacity: 0.6;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_purp.svg" alt="" />
-          <img id="shadow_blue" style="opacity: 0.6;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_blue.svg" alt="" /> -->
-          <!-- <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 18.png" alt="" />
-          <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 18-3.png" alt="" />
-          <img class="bg-wing-animated bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 18-4.png" alt="" />
-          <img class="bg-wing-animated left" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 18-5.png" alt="" />
-          <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 18-6.png" alt="" />
-          <img class="bg-wing-animated left" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 18-7.png" alt="" />
-          <img class="bg-wing-animated right top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 19.png" alt="" />
-          <img class="bg-wing-animated left top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 21.png" alt="" />
-          <img class="bg-wing-animated right bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 21-purpl.png" alt="" />
-          <img class="bg-wing-animated right" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 20.png" alt="" />
-          <img class="bg-wing-animated right bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 22.png" alt="" />
-          <img class="bg-wing-animated bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 23.png" alt="" />
-          <img class="bg-wing-animated top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 24.png" alt="" />
-          <img class="bg-wing-animated top right" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 25.png" alt="" />
-          <img class="bg-wing-animated right top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 26.png" alt="" />
-          <img class="bg-wing-animated right bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 27.png" alt="" /> -->
+          <img id="shadow_purp" style="opacity: 0.3;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_purp.svg" alt="" />
+          <img id="shadow_blue" style="opacity: 0.3;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_blue.svg" alt="" />
         </div>
       </div>
     </section>
@@ -395,7 +312,9 @@ Template Post Type: page
         <div class="section_7-streem">
           <img class="line-to-right" src="<?php echo get_stylesheet_directory_uri(); ?>/img/line-to-right.svg" alt="">
           <div class="video-border">
-            <video class="streem streem_7" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s4.mp4" > </video>
+            <video class="streem streem_7 lazy" autoplay muted loop poster="<?php echo get_stylesheet_directory_uri(); ?>/img/poster2.png"> 
+              <source data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s4.mp4">
+            </video>
           </div>
           <div class="section4__info__wrapper">
             <div class="slide_title__right">
@@ -421,31 +340,13 @@ Template Post Type: page
               </div>
             </div>
             <img class="bg-section-card section-7-card-3" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg-blure-card.png" alt="">
-            <button class="look_format">Посмотреть формат</button>
+            <a class="look_format" href="/" target="_blank">Посмотреть формат</a>
           </div>
 
         </div>
         <div class="background_smoke">
-          <!-- <img class="bg" style="opacity: 0.6;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/shadow blue.png" alt="" />
-          <img class="bg" style="opacity: 0.6;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/shadow purp.png" alt="" /> -->
-
-          <!-- <img class="bg-wing-animated left top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 18.png" alt="" />
-          <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 18-2.png" alt="" />
-          <img class="bg-wing-animated size-h-full left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 18-3.png" alt="" />
-          <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 18-4.png" alt="" />
-          <img class="bg-wing-animated left top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 18-5.png" alt="" />
-          <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 18-6.png" alt="" />
-          <img class="bg-wing-animated top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 18-7.png" alt="" />
-          <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 19.png" alt="" />
-          <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 20.png" alt="" />
-          <img class="bg-wing-animated right top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 20-2.png" alt="" />
-          <img class="bg-wing-animated bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 21.png" alt="" />
-          <img class="bg-wing-animated left top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 21-1.png" alt="" />
-          <img class="bg-wing-animated right top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 21-2.png" alt="" />
-          <img class="bg-wing-animated bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 22.png" alt="" />
-          <img class="bg-wing-animated right bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 23.png" alt="" />
-          <img class="bg-wing-animated right top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 24.png" alt="" />
-          <img class="bg-wing-animated right bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 25.png" alt="" /> -->
+          <img class="bg" style="opacity: 0.3;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/shadow blue.png" alt="" />
+          <img class="bg" style="opacity: 0.3;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/shadow purp.png" alt="" />
         </div>
       </div>
     </section>
@@ -454,7 +355,9 @@ Template Post Type: page
         <div class="section_7-streem">
           <img class="line-to-right" src="<?php echo get_stylesheet_directory_uri(); ?>/img/line-to-right.svg" alt="">
           <div class="video-border">
-            <video class="streem streem_8" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s4.mp4" > </video>
+            <video class="streem streem_8 lazy" autoplay muted loop poster="<?php echo get_stylesheet_directory_uri(); ?>/img/poster2.png"> 
+              <source data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s4.mp4">
+            </video>
           </div>
           <div class="section4__info__wrapper">
             <div class="slide_title__right">
@@ -480,30 +383,12 @@ Template Post Type: page
               </div>
             </div>
             <img class="bg-section-card section-8-card-2" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg-blure-card.png" alt="">
-            <button class="look_format">Посмотреть формат</button>
+            <a class="look_format" href="/" target="_blank">Посмотреть формат</a>
           </div>
         </div>
         <div class="background_smoke">
-          <!-- <img class="bg" style="opacity: 0.6;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/shadow blue.png" alt="" />
-          <img class="bg" style="opacity: 0.6;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/shadow purp.png" alt="" /> -->
-
-          <!-- <img class="bg-wing-animated left top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 18.png" alt="" />
-          <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 18-2.png" alt="" />
-          <img class="bg-wing-animated size-h-full left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 18-3.png" alt="" />
-          <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 18-4.png" alt="" />
-          <img class="bg-wing-animated left top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 18-5.png" alt="" />
-          <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 18-6.png" alt="" />
-          <img class="bg-wing-animated top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 18-7.png" alt="" />
-          <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 19.png" alt="" />
-          <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 20.png" alt="" />
-          <img class="bg-wing-animated right top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 20-2.png" alt="" />
-          <img class="bg-wing-animated bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 21.png" alt="" />
-          <img class="bg-wing-animated left top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 21-1.png" alt="" />
-          <img class="bg-wing-animated right top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 21-2.png" alt="" />
-          <img class="bg-wing-animated bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 22.png" alt="" />
-          <img class="bg-wing-animated right bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 23.png" alt="" />
-          <img class="bg-wing-animated right top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 24.png" alt="" />
-          <img class="bg-wing-animated right bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 25.png" alt="" /> -->
+          <img class="bg" style="opacity: 0.3;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/shadow blue.png" alt="" />
+          <img class="bg" style="opacity: 0.3;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/shadow purp.png" alt="" />
         </div>
       </div>
     </section>
@@ -512,7 +397,9 @@ Template Post Type: page
         <div class="section_7-streem">
           <img class="line-to-right" src="<?php echo get_stylesheet_directory_uri(); ?>/img/line-to-right.svg" alt="">
           <div class="video-border">
-            <video class="streem streem_8" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s3.mp4" > </video>
+            <video class="streem streem_8 lazy" autoplay muted loop poster="<?php echo get_stylesheet_directory_uri(); ?>/img/poster.png"> 
+              <source data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s3.mp4">
+            </video>
           </div>
           <div class="section4__info__wrapper">
             <div class="slide_title__right">
@@ -539,31 +426,13 @@ Template Post Type: page
               </div>
             </div>
             <img class="bg-section-card section-9-card-1" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg-blure-card.png" alt="">
-            <button class="look_format">Посмотреть формат</button>
+            <a class="look_format" href="/" target="_blank">Посмотреть формат</a>
           </div>
 
         </div>
         <div class="background_smoke">
-          <!-- <img class="bg" style="opacity: 0.6;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/shadow blue.png" alt="" />
-          <img class="bg" style="opacity: 0.6;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/shadow purp.png" alt="" /> -->
-
-          <!-- <img class="bg-wing-animated left top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 18.png" alt="" />
-          <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 18-2.png" alt="" />
-          <img class="bg-wing-animated size-h-full left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 18-3.png" alt="" />
-          <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 18-4.png" alt="" />
-          <img class="bg-wing-animated left top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 18-5.png" alt="" />
-          <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 18-6.png" alt="" />
-          <img class="bg-wing-animated top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 18-7.png" alt="" />
-          <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 19.png" alt="" />
-          <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 20.png" alt="" />
-          <img class="bg-wing-animated right top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 20-2.png" alt="" />
-          <img class="bg-wing-animated bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 21.png" alt="" />
-          <img class="bg-wing-animated left top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 21-1.png" alt="" />
-          <img class="bg-wing-animated right top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 21-2.png" alt="" />
-          <img class="bg-wing-animated bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 22.png" alt="" />
-          <img class="bg-wing-animated right bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 23.png" alt="" />
-          <img class="bg-wing-animated right top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 24.png" alt="" />
-          <img class="bg-wing-animated right bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 25.png" alt="" /> -->
+          <img class="bg" style="opacity: 0.3;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/shadow blue.png" alt="" />
+          <img class="bg" style="opacity: 0.3;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/shadow purp.png" alt="" />
         </div>
       </div>
     </section>
@@ -572,7 +441,9 @@ Template Post Type: page
         <div class="section_7-streem">
           <img class="line-to-right" src="<?php echo get_stylesheet_directory_uri(); ?>/img/line-to-right.svg" alt="">
           <div class="video-border">
-            <video class="streem streem_8" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s4.mp4" > </video>
+            <video class="streem streem_8 lazy" autoplay muted loop poster="<?php echo get_stylesheet_directory_uri(); ?>/img/poster3.png"> 
+              <source data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/lilo_anim.mp4">
+            </video>
           </div>
           <div class="section4__info__wrapper">
             <div class="slide_title__right">
@@ -585,7 +456,7 @@ Template Post Type: page
                 1% - <span>CTR</span>
               </div>
               <div class="card_subtitle">
-                Переходы со стрима на страницу продукта
+                Переходы со стрима <br> на страницу продукта
               </div>
             </div>
             <img class="bg-section-card section-10-card-1" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg-blure-card.png" alt="">
@@ -602,26 +473,8 @@ Template Post Type: page
 
         </div>
         <div class="background_smoke">
-          <!-- <img class="bg" style="opacity: 0.6;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/shadow blue.png" alt="" />
-          <img class="bg" style="opacity: 0.6;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/shadow purp.png" alt="" /> -->
-
-          <!-- <img class="bg-wing-animated left top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 18.png" alt="" />
-          <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 18-2.png" alt="" />
-          <img class="bg-wing-animated size-h-full left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 18-3.png" alt="" />
-          <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 18-4.png" alt="" />
-          <img class="bg-wing-animated left top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 18-5.png" alt="" />
-          <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 18-6.png" alt="" />
-          <img class="bg-wing-animated top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 18-7.png" alt="" />
-          <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 19.png" alt="" />
-          <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 20.png" alt="" />
-          <img class="bg-wing-animated right top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 20-2.png" alt="" />
-          <img class="bg-wing-animated bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 21.png" alt="" />
-          <img class="bg-wing-animated left top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 21-1.png" alt="" />
-          <img class="bg-wing-animated right top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 21-2.png" alt="" />
-          <img class="bg-wing-animated bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 22.png" alt="" />
-          <img class="bg-wing-animated right bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 23.png" alt="" />
-          <img class="bg-wing-animated right top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 24.png" alt="" />
-          <img class="bg-wing-animated right bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 25.png" alt="" /> -->
+          <img class="bg" style="opacity: 0.3;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/shadow blue.png" alt="" />
+          <img class="bg" style="opacity: 0.3;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/shadow purp.png" alt="" />
         </div>
       </div>
     </section>
@@ -659,26 +512,8 @@ Template Post Type: page
         <div class="background">
         </div>
         <div class="background_smoke">
-          <!-- <img class="bg" style="opacity: 0.6;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_11/shadow blue.png" alt="" />
-          <img class="bg" style="opacity: 0.6;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_11/shadow purp.png" alt="" /> -->
-
-          <!-- <img class="bg-wing-animated top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_11/pngwing 18-1.png" alt="" />
-          <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_11/pngwing 18-2.png" alt="" />
-          <img class="bg-wing-animated size-h-full left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_11/pngwing 18-3.png" alt="" />
-          <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_11/pngwing 18-4.png" alt="" />
-          <img class="bg-wing-animated left top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_11/pngwing 18-5.png" alt="" />
-          <img class="bg-wing-animated left" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_11/pngwing 18-6.png" alt="" />
-          <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_11/pngwing 19-1.png" alt="" />
-          <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_11/pngwing 20-1.png" alt="" />
-          <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_11/pngwing 21-1.png" alt="" />
-          <img class="bg-wing-animated left top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_11/pngwing 21-2.png" alt="" />
-
-          <img class="bg-wing-animated right top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_11/pngwing 19.png" alt="" />
-          <img class="bg-wing-animated right" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_11/pngwing 20.png" alt="" />
-          <img class="bg-wing-animated right top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_11/pngwing 21.png" alt="" />
-          <img class="bg-wing-animated right bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_11/pngwing 23.png" alt="" />
-          <img class="bg-wing-animated right top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_11/pngwing 24.png" alt="" />
-          <img class="bg-wing-animated right bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_11/pngwing 25.png" alt="" /> -->
+          <img class="bg" style="opacity: 0.3;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_11/shadow blue.png" alt="" />
+          <img class="bg" style="opacity: 0.3;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_11/shadow purp.png" alt="" />
         </div>
       </div>
     </section>
@@ -706,30 +541,12 @@ Template Post Type: page
           </div>
           <img class="bg-needed_col__image roket" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/dust-purp-12.png" alt="bg-dust-purp-12">
         </div>
-        <a class="btn__blue" href="/">СМОТРЕТЬ ТТ</a>
+        <a class="btn__blue" href="/" target="_blank">СМОТРЕТЬ ТТ</a>
         <div class="background">
         </div>
         <div class="background_smoke">
-          <!-- <img class="bg" style="opacity: 0.6;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/shadow blue.png" alt="" />
-          <img class="bg" style="opacity: 0.6;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/shadow purp.png" alt="" /> -->
-
-          <!-- <img class="bg-wing-animated left top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 18.png" alt="" />
-          <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 18-2.png" alt="" />
-          <img class="bg-wing-animated size-h-full left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 18-3.png" alt="" />
-          <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 18-4.png" alt="" />
-          <img class="bg-wing-animated left top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 18-5.png" alt="" />
-          <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 18-6.png" alt="" />
-          <img class="bg-wing-animated top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 18-7.png" alt="" />
-          <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 19.png" alt="" />
-          <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 20.png" alt="" />
-          <img class="bg-wing-animated right top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 20-2.png" alt="" />
-          <img class="bg-wing-animated bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 21.png" alt="" />
-          <img class="bg-wing-animated left top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 21-1.png" alt="" />
-          <img class="bg-wing-animated right top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 21-2.png" alt="" />
-          <img class="bg-wing-animated bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 22.png" alt="" />
-          <img class="bg-wing-animated right bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 23.png" alt="" />
-          <img class="bg-wing-animated right top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 24.png" alt="" />
-          <img class="bg-wing-animated right bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/pngwing 25.png" alt="" /> -->
+          <img class="bg" style="opacity: 0.3;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/shadow blue.png" alt="" />
+          <img class="bg" style="opacity: 0.3;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_4/shadow purp.png" alt="" />
         </div>
       </div>
     </section>
@@ -753,7 +570,7 @@ Template Post Type: page
             </p>
           </div>
         </div>
-        <a class="btn__blue btn__blue_sreemers_list" href="/">СПИСОК СТРИМЕРОВ</a>
+        <a class="btn__blue btn__blue_sreemers_list" href="/" target="_blank">СПИСОК СТРИМЕРОВ</a>
         <img
           class="background-img woman_vr"
           src="<?php echo get_stylesheet_directory_uri(); ?>/img/girl_witcher.png"
@@ -762,25 +579,8 @@ Template Post Type: page
         <div class="background">
         </div>
         <div class="background_smoke">
-          <!-- <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 19-blue.png" alt="" /> -->
-          <!-- <img id="shadow_purp" style="opacity: 0.6;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_purp.svg" alt="" />
-          <img id="shadow_blue" style="opacity: 0.6;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_blue.svg" alt="" /> -->
-          <!-- <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 18.png" alt="" />
-          <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 18-3.png" alt="" />
-          <img class="bg-wing-animated bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 18-4.png" alt="" />
-          <img class="bg-wing-animated left" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 18-5.png" alt="" />
-          <img class="bg-wing-animated left bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 18-6.png" alt="" />
-          <img class="bg-wing-animated left" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 18-7.png" alt="" />
-          <img class="bg-wing-animated right top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 19.png" alt="" />
-          <img class="bg-wing-animated left top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 21.png" alt="" />
-          <img class="bg-wing-animated right bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 21-purpl.png" alt="" />
-          <img class="bg-wing-animated right" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 20.png" alt="" />
-          <img class="bg-wing-animated right bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 22.png" alt="" />
-          <img class="bg-wing-animated bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 23.png" alt="" />
-          <img class="bg-wing-animated top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 24.png" alt="" />
-          <img class="bg-wing-animated top right" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 25.png" alt="" />
-          <img class="bg-wing-animated right top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 26.png" alt="" />
-          <img class="bg-wing-animated right bottom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_1/pngwing 27.png" alt="" /> -->
+          <img id="shadow_purp" style="opacity: 0.3;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_purp.svg" alt="" />
+          <img id="shadow_blue" style="opacity: 0.3;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shadow_blue.svg" alt="" />
         </div>
       </div>
     </section>
@@ -789,38 +589,41 @@ Template Post Type: page
 </div>
 <div class="p-nav">
   <div class="p-nav__list">
-    <div class="p-nav__item" data-slide="13">
-      <p class="p-nav__item--title">Запуск</p>
-    </div>
-    <div class="p-nav__item" data-slide="12">
-      <p class="p-nav__item--title">Что нужно для запуска?</p>
-    </div>
-    <div class="p-nav__item" data-slide="9">
-      <p class="p-nav__item--title">Форматы (Banner)</p>
-    </div>
-    <div class="p-nav__item" data-slide="8">
-      <p class="p-nav__item--title">Форматы (Overlay banner)</p>
-    </div>
-    <div class="p-nav__item" data-slide="7">
-      <p class="p-nav__item--title">Форматы (Bar in video)</p>
-    </div>
-    <div class="p-nav__item" data-slide="11">
-      <p class="p-nav__item--title">Преимущества работы с лило</p>
-    </div>
-    <div class="p-nav__item" data-slide="5">
-      <p class="p-nav__item--title">Стример получает</p>
-    </div>
-    <div class="p-nav__item" data-slide="4">
-      <p class="p-nav__item--title">Контент всегда в топе</p>
-    </div>
-    <div class="p-nav__item" data-slide="3">
-      <p class="p-nav__item--title">Наша сеть</p>
+    <div class="p-nav__item active" data-slide="1">
+      <p class="p-nav__item--title">Lilo</p>
     </div>
     <div class="p-nav__item" data-slide="2">
       <p class="p-nav__item--title">Платформы</p>
     </div>
-    <div class="p-nav__item" data-slide="1">
-      <p class="p-nav__item--title">Lilo</p>
+    <div class="p-nav__item" data-slide="3">
+      <p class="p-nav__item--title">Наша сеть</p>
+    </div>
+    <div class="p-nav__item" data-slide="4">
+      <p class="p-nav__item--title">Контент всегда в топе</p>
+    </div>
+    <div class="p-nav__item" data-slide="5">
+      <p class="p-nav__item--title">Стример получает</p>
+    </div>
+    <div class="p-nav__item" data-slide="6">
+      <p class="p-nav__item--title">Размещение рекламы</p>
+    </div>
+    <div class="p-nav__item" data-slide="7">
+      <p class="p-nav__item--title">Форматы (Bar in video)</p>
+    </div>
+    <div class="p-nav__item" data-slide="8">
+      <p class="p-nav__item--title">Форматы (Overlay banner)</p>
+    </div>
+    <div class="p-nav__item" data-slide="9">
+      <p class="p-nav__item--title">Форматы (Banner)</p>
+    </div>
+    <div class="p-nav__item" data-slide="11">
+      <p class="p-nav__item--title">Преимущества работы с лило</p>
+    </div>
+    <div class="p-nav__item" data-slide="12">
+      <p class="p-nav__item--title">Что нужно для запуска?</p>
+    </div>
+    <div class="p-nav__item" data-slide="13">
+      <p class="p-nav__item--title">Запуск</p>
     </div>
    
     <!--<div class="p-nav__item" data-slide="9">

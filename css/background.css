@@ -26,6 +26,7 @@
   position: fixed;
   z-index: 0;
   width: 60vw;
+  height: 100vh;
 }
 .woman_vr {
   bottom: 0;
@@ -60,7 +61,7 @@
   height: 105vh !important;
   top: -15vh;
   left: -9vw;
-  opacity: 0.8;
+  opacity: 0.6;
   transition: opacity 0.5s ease;
 }
 .section_2 .shadow-blue {
@@ -69,7 +70,7 @@
   width: 50vw;
   top: -15vh;
   left: -9vw;
-  opacity: 0.8;
+  opacity: 0.6;
   transition: opacity 0.5s ease;
 }
 

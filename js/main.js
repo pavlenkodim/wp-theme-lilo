@@ -1,6 +1,6 @@
 $(document).ready(function () {
   const TITLES = [
-    "Lilo",
+    " ",
     "Платформы",
     "Наша сеть",
     "Контент всегда в топе",
@@ -12,13 +12,54 @@ $(document).ready(function () {
     "Форматы",
     "Преимущества работы с Lilo",
     "Что нужно для запуска?",
-    "Запуск",
+    " ",
   ];
+
+  if (window.updateSmokeForSlide) {
+    window.updateSmokeForSlide($(".section.active").data("slide"));
+  }
+
+  // Animation Views counter
+  function updateCounter(newNumber) {
+    const counter = document.querySelector(".user-counter");
+    const currentDigits = Array.from(counter.querySelectorAll(".digit"));
+
+    const newDigitsArray = String(newNumber)
+      .split("")
+      .map((num) => {
+        const newDigitElement = document.createElement("div");
+        newDigitElement.classList.add("digit", "digit-new");
+        newDigitElement.textContent = num;
+        return newDigitElement;
+      });
+
+    newDigitsArray.forEach((newDigit, index) => {
+      counter.appendChild(newDigit);
+
+      if (currentDigits[index]) {
+        currentDigits[index].classList.add("digit-up");
+      }
+
+      setTimeout(() => {
+        newDigit.classList.remove("digit-new");
+        newDigit.classList.add("digit-enter");
+        if (currentDigits[index]) {
+          currentDigits[index].remove();
+        }
+      }, 200); // Speed animation
+    });
+  }
+
+  let counterValue = 1;
+
+  setInterval(() => {
+    counterValue += 19;
+    updateCounter(counterValue);
+  }, 1000);
 
   // remove logo in head
   function hideHeader() {
     let activeSlide;
-
     $(".section").each(function () {
       if ($(this).context.className.includes("active")) {
         activeSlide = $(this).context;
@@ -38,13 +79,97 @@ $(document).ready(function () {
     }
 
     chengeTitle(+activeSlide.attributes["data-slide"].value);
+    LazyLoadVideo(+activeSlide.attributes["data-slide"].value);
   }
   hideHeader();
 
+  $(".ads_info__card").click(function () {
+    switch ($(this).data("format")) {
+      case "in-stream":
+        toSlide(7);
+        break;
+      case "interactive-bar":
+        toSlide(8);
+        break;
+      case "overlay-banner":
+        toSlide(9);
+        break;
+      case "banner":
+        toSlide(10);
+        break;
+    }
+  });
+
+  function toSlide(slide) {
+    $(".section").removeClass("active");
+    $(".section[data-slide='" + slide + "']").addClass("active");
+    change();
+  }
+
   // Chenge title on slide
   function chengeTitle(active) {
-    let title = $(".title__head")[0];
-    title.textContent = TITLES[active - 1];
+    const titleElement = document.querySelector(".title__head");
+    const newText = TITLES[active - 1];
+
+    titleElement.setAttribute("data-content", newText);
+    titleElement.classList.add("changing");
+
+    setTimeout(() => {
+      titleElement.textContent = newText;
+      titleElement.classList.remove("changing");
+    }, 630);
+  }
+
+  // Lazy load videos
+  function LazyLoadVideo(activeSlide) {
+    let lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
+
+    function playVideo(video) {
+      for (let source in video.children) {
+        let videoSource = video.children[source];
+        if (
+          typeof videoSource.tagName === "string" &&
+          videoSource.tagName === "SOURCE"
+        ) {
+          videoSource.src = videoSource.dataset.src;
+        }
+      }
+
+      video.load();
+      video.classList.remove("lazy");
+
+      lazyVideos.forEach((v) => {
+        v.classList.add("lazy");
+      });
+    }
+
+    switch (activeSlide) {
+      case 3:
+        playVideo(lazyVideos[0]);
+        break;
+      case 4:
+        playVideo(lazyVideos[1]);
+        break;
+      case 6:
+        playVideo(lazyVideos[2]);
+        playVideo(lazyVideos[3]);
+        playVideo(lazyVideos[4]);
+        break;
+      case 7:
+        playVideo(lazyVideos[5]);
+        break;
+      case 8:
+        playVideo(lazyVideos[6]);
+        break;
+      case 9:
+        playVideo(lazyVideos[7]);
+        break;
+      case 10:
+        playVideo(lazyVideos[8]);
+        break;
+      default:
+        break;
+    }
   }
 
   //Удаление активного элемента в рамках селектора
@@ -1028,6 +1153,11 @@ $(document).ready(function () {
             $(".section.active").data("slide") +
             '"]'
         ).addClass("active");
+
+        if (window.updateSmokeForSlide) {
+          window.updateSmokeForSlide($(".section.active").data("slide"));
+        }
+
         if ($(".section.active").find(".desktop_video--frame").length > 0) {
           $(".desktop_video--top").addClass("loading");
           setCreative(1);
