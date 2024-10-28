@@ -69,7 +69,7 @@ Template Post Type: page
                 </div>
               </div>
               <div class="blure_container_btn twitch-opacity">
-                <button class="look_btn" id="look-twitch">Посмотреть формат</button>
+                <a class="look_btn" id="look-twitch" href="/" target="_blank">Посмотреть формат</a>
               </div>
             </div>
             <div class="section2__column section2__column-vkplay">
@@ -90,7 +90,7 @@ Template Post Type: page
                 </div>
               </div>
               <div class="blure_container_btn vkplay-opacity">
-                <button class="look_btn" id="look-vkplay">Посмотреть формат</button>
+                <a class="look_btn" id="look-vkplay" href="/" target="_blank">Посмотреть формат</a>
               </div>
             </div>
             <div class="descriptoin_slide">Средние значения в день*</div>
@@ -170,7 +170,9 @@ Template Post Type: page
           </div>
         </div>
         <div>
-          <video class="streem streem_3" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s3.mp4" > </video>
+          <video class="streem streem_3 lazy" autoplay muted loop poster="<?php echo get_stylesheet_directory_uri(); ?>/img/poster.png">
+            <source data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s3.mp4" type="video/mp4">
+          </video>
         </div>
       </div>
       <img class="girl_streem" src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_woman.png" alt="">
@@ -184,7 +186,9 @@ Template Post Type: page
     <section class="section section_4 custom-bg" data-slide="4">
       <div class="wrapper">
         <div class="section_4-streem">
-          <video class="streem streem_4" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s4.mp4" > </video>
+          <video class="streem streem_4 lazy" autoplay muted loop poster="<?php echo get_stylesheet_directory_uri(); ?>/img/poster2.png"> 
+            <source data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s4.mp4">
+          </video>
           <div class="section4__info__wrapper">
             <div class="slide_title__right">
               <h2 class="section4__title">Пребывание в топе</h2>
@@ -282,13 +286,19 @@ Template Post Type: page
         </div>
         <div class="ads_carusel__vertical">
             <div class="video-border">
-              <video class="streem streem_6" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/lilo_anim.mp4" > </video>
+              <video class="streem streem_6 lazy" autoplay muted loop poster="<?php echo get_stylesheet_directory_uri(); ?>/img/poster3.png"> 
+                <source data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/lilo_anim.mp4">
+              </video>
             </div>
             <div class="video-border">
-              <video class="streem streem_6" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s4.mp4" > </video>
+              <video class="streem streem_6 lazy" autoplay muted loop poster="<?php echo get_stylesheet_directory_uri(); ?>/img/poster2.png"> 
+                <source data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s4.mp4">
+              </video>
             </div>
             <div class="video-border">
-              <video class="streem streem_6" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s3.mp4" > </video>
+              <video class="streem streem_6 lazy" autoplay muted loop poster="<?php echo get_stylesheet_directory_uri(); ?>/img/poster.png" > 
+                <source data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s3.mp4">
+              </video>
             </div>
           </div>
         <div class="background_smoke">
@@ -302,7 +312,9 @@ Template Post Type: page
         <div class="section_7-streem">
           <img class="line-to-right" src="<?php echo get_stylesheet_directory_uri(); ?>/img/line-to-right.svg" alt="">
           <div class="video-border">
-            <video class="streem streem_7" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s4.mp4" > </video>
+            <video class="streem streem_7 lazy" autoplay muted loop poster="<?php echo get_stylesheet_directory_uri(); ?>/img/poster2.png"> 
+              <source data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s4.mp4">
+            </video>
           </div>
           <div class="section4__info__wrapper">
             <div class="slide_title__right">
@@ -328,7 +340,7 @@ Template Post Type: page
               </div>
             </div>
             <img class="bg-section-card section-7-card-3" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg-blure-card.png" alt="">
-            <button class="look_format">Посмотреть формат</button>
+            <a class="look_format" href="/" target="_blank">Посмотреть формат</a>
           </div>
 
         </div>
@@ -343,7 +355,9 @@ Template Post Type: page
         <div class="section_7-streem">
           <img class="line-to-right" src="<?php echo get_stylesheet_directory_uri(); ?>/img/line-to-right.svg" alt="">
           <div class="video-border">
-            <video class="streem streem_8" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s4.mp4" > </video>
+            <video class="streem streem_8 lazy" autoplay muted loop poster="<?php echo get_stylesheet_directory_uri(); ?>/img/poster2.png"> 
+              <source data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s4.mp4">
+            </video>
           </div>
           <div class="section4__info__wrapper">
             <div class="slide_title__right">
@@ -369,7 +383,7 @@ Template Post Type: page
               </div>
             </div>
             <img class="bg-section-card section-8-card-2" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg-blure-card.png" alt="">
-            <button class="look_format">Посмотреть формат</button>
+            <a class="look_format" href="/" target="_blank">Посмотреть формат</a>
           </div>
         </div>
         <div class="background_smoke">
@@ -383,7 +397,9 @@ Template Post Type: page
         <div class="section_7-streem">
           <img class="line-to-right" src="<?php echo get_stylesheet_directory_uri(); ?>/img/line-to-right.svg" alt="">
           <div class="video-border">
-            <video class="streem streem_8" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s3.mp4" > </video>
+            <video class="streem streem_8 lazy" autoplay muted loop poster="<?php echo get_stylesheet_directory_uri(); ?>/img/poster.png"> 
+              <source data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s3.mp4">
+            </video>
           </div>
           <div class="section4__info__wrapper">
             <div class="slide_title__right">
@@ -410,7 +426,7 @@ Template Post Type: page
               </div>
             </div>
             <img class="bg-section-card section-9-card-1" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg-blure-card.png" alt="">
-            <button class="look_format">Посмотреть формат</button>
+            <a class="look_format" href="/" target="_blank">Посмотреть формат</a>
           </div>
 
         </div>
@@ -425,7 +441,9 @@ Template Post Type: page
         <div class="section_7-streem">
           <img class="line-to-right" src="<?php echo get_stylesheet_directory_uri(); ?>/img/line-to-right.svg" alt="">
           <div class="video-border">
-            <video class="streem streem_8" autoplay muted loop src="<?php echo get_stylesheet_directory_uri(); ?>/img/streem_s4.mp4" > </video>
+            <video class="streem streem_8 lazy" autoplay muted loop poster="<?php echo get_stylesheet_directory_uri(); ?>/img/poster3.png"> 
+              <source data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/lilo_anim.mp4">
+            </video>
           </div>
           <div class="section4__info__wrapper">
             <div class="slide_title__right">
@@ -523,7 +541,7 @@ Template Post Type: page
           </div>
           <img class="bg-needed_col__image roket" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/dust-purp-12.png" alt="bg-dust-purp-12">
         </div>
-        <a class="btn__blue" href="/">СМОТРЕТЬ ТТ</a>
+        <a class="btn__blue" href="/" target="_blank">СМОТРЕТЬ ТТ</a>
         <div class="background">
         </div>
         <div class="background_smoke">
@@ -552,7 +570,7 @@ Template Post Type: page
             </p>
           </div>
         </div>
-        <a class="btn__blue btn__blue_sreemers_list" href="/">СПИСОК СТРИМЕРОВ</a>
+        <a class="btn__blue btn__blue_sreemers_list" href="/" target="_blank">СПИСОК СТРИМЕРОВ</a>
         <img
           class="background-img woman_vr"
           src="<?php echo get_stylesheet_directory_uri(); ?>/img/girl_witcher.png"
@@ -585,6 +603,9 @@ Template Post Type: page
     </div>
     <div class="p-nav__item" data-slide="5">
       <p class="p-nav__item--title">Стример получает</p>
+    </div>
+    <div class="p-nav__item" data-slide="6">
+      <p class="p-nav__item--title">Размещение рекламы</p>
     </div>
     <div class="p-nav__item" data-slide="7">
       <p class="p-nav__item--title">Форматы (Bar in video)</p>

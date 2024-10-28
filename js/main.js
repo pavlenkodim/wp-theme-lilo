@@ -19,7 +19,7 @@ $(document).ready(function () {
     window.updateSmokeForSlide($(".section.active").data("slide"));
   }
 
-  // Animatin Views counter
+  // Animation Views counter
   function updateCounter(newNumber) {
     const counter = document.querySelector(".user-counter");
     const currentDigits = Array.from(counter.querySelectorAll(".digit"));
@@ -60,7 +60,6 @@ $(document).ready(function () {
   // remove logo in head
   function hideHeader() {
     let activeSlide;
-
     $(".section").each(function () {
       if ($(this).context.className.includes("active")) {
         activeSlide = $(this).context;
@@ -80,6 +79,7 @@ $(document).ready(function () {
     }
 
     chengeTitle(+activeSlide.attributes["data-slide"].value);
+    LazyLoadVideo(+activeSlide.attributes["data-slide"].value);
   }
   hideHeader();
 
@@ -118,6 +118,60 @@ $(document).ready(function () {
       titleElement.textContent = newText;
       titleElement.classList.remove("changing");
     }, 630);
+  }
+
+  // Lazy load videos
+  function LazyLoadVideo(activeSlide) {
+    let lazyVideos = [].slice.call(document.querySelectorAll("video.lazy")); // Получаем все видео на странице
+
+    console.log(lazyVideos);
+
+    function playVideo(video) {
+      for (let source in video.children) {
+        let videoSource = video.children[source];
+        if (
+          typeof videoSource.tagName === "string" &&
+          videoSource.tagName === "SOURCE"
+        ) {
+          videoSource.src = videoSource.dataset.src;
+        }
+      }
+
+      video.load();
+      video.classList.remove("lazy");
+
+      lazyVideos.forEach((v) => {
+        v.classList.add("lazy");
+      });
+    }
+
+    switch (activeSlide) {
+      case 3:
+        playVideo(lazyVideos[0]);
+        break;
+      case 4:
+        playVideo(lazyVideos[1]);
+        break;
+      case 6:
+        playVideo(lazyVideos[2]);
+        playVideo(lazyVideos[3]);
+        playVideo(lazyVideos[4]);
+        break;
+      case 7:
+        playVideo(lazyVideos[5]);
+        break;
+      case 8:
+        playVideo(lazyVideos[6]);
+        break;
+      case 9:
+        playVideo(lazyVideos[7]);
+        break;
+      case 10:
+        playVideo(lazyVideos[8]);
+        break;
+      default:
+        break;
+    }
   }
 
   //Удаление активного элемента в рамках селектора
