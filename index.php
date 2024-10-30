@@ -51,9 +51,9 @@ Template Post Type: page
     <section class="section section_2" data-slide="2">
       <div class="wrapper">
         <div class="container-columns">
+          <img class="shadow-purp" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_2/shadow purp.png" alt="" />
+          <img class="twitch-bg-plaseholder twitch-opacity" src="<?php echo get_stylesheet_directory_uri(); ?>/img/twitch-bg.png" alt="">
           <div class="section2__column section2__column-twitch">
-              <img class="shadow-purp" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_2/shadow purp.png" alt="" />
-              <img class="twitch-bg-plaseholder twitch-opacity" src="<?php echo get_stylesheet_directory_uri(); ?>/img/twitch-bg.png" alt="">
               <img
                 class="twitch_logo streem_logo twitch-opacity"
                 src="<?php echo get_stylesheet_directory_uri(); ?>/img/twitch_logo.png"
@@ -72,9 +72,9 @@ Template Post Type: page
                 <a class="look_btn" id="look-twitch" href="/" target="_blank">Посмотреть формат</a>
               </div>
             </div>
+            <img class="shadow-blue" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_2/shadow blue.png" alt="" />
+            <img class="vklay-bg-plaseholder vkplay-opacity" src="<?php echo get_stylesheet_directory_uri(); ?>/img/vkplay-bg.png" alt="">
             <div class="section2__column section2__column-vkplay">
-              <img class="shadow-blue" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/slide_2/shadow blue.png" alt="" />
-              <img class="vklay-bg-plaseholder vkplay-opacity" src="<?php echo get_stylesheet_directory_uri(); ?>/img/vkplay-bg.png" alt="">
               <img
                 class="vkplay_logo streem_logo vkplay-opacity"
                 src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-vkplay1.svg"

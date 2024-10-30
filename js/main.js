@@ -120,6 +120,15 @@ $(document).ready(function () {
     }, 630);
   }
 
+  $(".section2__column-vkplay").hover(
+    function () {
+      $(".section_2 .shadow-purp").css("opacity", "0.3");
+    },
+    function () {
+      $(".section_2 .shadow-purp").css("opacity", "1");
+    }
+  );
+
   // Lazy load videos
   function LazyLoadVideo(activeSlide) {
     let lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));

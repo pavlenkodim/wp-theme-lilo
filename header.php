@@ -7,16 +7,6 @@
   $current_url = $_SERVER['REQUEST_URI'];
   wp_register_style('normalize', get_template_directory_uri() . '/css/normalize.css', array(), '1.0', 'screen');
   wp_register_style('pace', get_template_directory_uri() . '/css/pace-theme-default.min.css', array(), '1.0', 'screen');
-  if(is_front_page()){
-    wp_register_style('dev', get_template_directory_uri() . '/css/dev.css', array(), '1.0', 'screen');
-  }
-  if(!(strpos($current_url, '/ads') === false)){
-    wp_register_style('ads', get_template_directory_uri() . '/css/ads.css?v=2', array(), '1.0', 'screen');
-    wp_register_style('slick', get_template_directory_uri() . '/css/slick.css?v=1', array(), '1.0', 'screen');
-  }
-  if(!(strpos($current_url, '/postcampaign') === false)){
-    wp_register_style('stats', get_template_directory_uri() . '/css/stats.css?v=19', array(), '1.0', 'screen');
-  }
   wp_register_style('style', get_template_directory_uri() . '/css/style.css?v=71', array(), '1.0', 'screen'); 
   wp_register_style('background', get_template_directory_uri() . '/css/background.css?', array(), '1.0', 'screen');  
 
@@ -25,15 +15,6 @@
   wp_enqueue_style('pace');
   wp_enqueue_style('background');
   wp_enqueue_style('main');
-  if(is_front_page()){
-    wp_enqueue_style('dev');
-  }
-  if(!(strpos($current_url, '/ads') === false)){
-    wp_enqueue_style('ads');
-  }
-  if(!(strpos($current_url, '/postcampaign') === false)){
-    wp_enqueue_style('stats');
-  }
   wp_enqueue_style('style');
   ?>
   
