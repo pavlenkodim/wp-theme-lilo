@@ -21,7 +21,8 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" type="image/x-icon" />
-  <script type="module" src="<?php echo get_stylesheet_directory_uri(); ?>/js/smoke.js"></script>
+  <script type="module" src="<?php echo get_stylesheet_directory_uri(); ?>/js/three.module.js" ></script>
+  <script type="module" src="<?php echo get_stylesheet_directory_uri(); ?>/js/smoke.js" ></script>
   <?php wp_head() ?>
 </head>
 <body>
