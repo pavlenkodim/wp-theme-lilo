@@ -50,13 +50,6 @@ $(document).ready(function () {
     });
   }
 
-  let counterValue = 1;
-
-  setInterval(() => {
-    counterValue += 19;
-    updateCounter(counterValue);
-  }, 1000);
-
   // remove logo in head
   function hideHeader() {
     let activeSlide;
@@ -77,11 +70,40 @@ $(document).ready(function () {
         $(".logo__wrapper-unstable").css({ opacity: 1 });
         break;
     }
+  }
+  hideHeader();
 
+  let counterInterval;
+
+  function changeSlide() {
+    let activeSlide;
+    $(".section").each(function () {
+      if ($(this).context.className.includes("active")) {
+        activeSlide = $(this).context;
+      }
+    });
+
+    switch (activeSlide.attributes["data-slide"].value) {
+      case "3":
+        let counterValue = 0;
+
+        counterInterval = setInterval(() => {
+          counterValue += 19;
+          updateCounter(counterValue);
+        }, 1000);
+        break;
+      default:
+        clearInterval(counterInterval);
+        const counter = document.querySelector(".user-counter");
+        setTimeout(() => {
+          counter.innerHTML = "<div class='digit'>0</div>";
+        }, 500);
+        break;
+    }
     chengeTitle(+activeSlide.attributes["data-slide"].value);
     LazyLoadVideo(+activeSlide.attributes["data-slide"].value);
   }
-  hideHeader();
+  changeSlide();
 
   $(".ads_info__card").click(function () {
     switch ($(this).data("format")) {
@@ -1276,6 +1298,7 @@ $(document).ready(function () {
           $(".feed__frame").attr("src", "");
         }
         hideHeader();
+        changeSlide();
       }, 50);
     }
 

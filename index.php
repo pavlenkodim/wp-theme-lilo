@@ -156,9 +156,7 @@ Template Post Type: page
             </span>
             <div class="user-counter-wrapper">
               <div class="user-counter">
-                <div class="digit">1</div>
-                <!-- <div class="digit">2</div>
-                <div class="digit">3</div> -->
+                <div class="digit">0</div>
               </div>
             </div>
           </div>

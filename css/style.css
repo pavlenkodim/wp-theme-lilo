@@ -1306,6 +1306,7 @@ input[type="number"] {
   display: flex;
   flex-direction: column;
   width: 50vw;
+  z-index: 1;
   transform: translateX(3vw) scale(1.05);
   transition: opacity 1s ease-out, transform 1s ease-out;
 }
