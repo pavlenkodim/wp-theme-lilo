@@ -1,7 +1,11 @@
-# LILO - Wordpreess theme
+# LILO - Wordpreess page for Foxible theme
 
-This project is made to order at the [Sunity web studio](https://sunity.kz/).
+## Для того чтобы установить это страницу в вашу тему Foxible, вам нужно:
 
-Link to figma disign - [Lilo-Main-Draft](<https://www.figma.com/design/Y5UUUV2atwgpDTT65HEgVi/Lilo-Main-Draft-(Foxible)?node-id=0-1&t=eiRBAVflEVRUcakQ-1>)
+1. Скопировать содержимое этого репозитория в корневую папку вашей темы.
+2. В Административной панели Wordpress установить создать страницу с названием "Lilo" и выбрать шаблон "Lilo".
+3. Запустить сайт и проверить работоспособность страницы.
 
-![screenshot](/screenshot.png)
+**(!) Не забудьте удалить этот `README.md`, `.gitignore` и папку `.git` после установки**
+
+PS. Я не создавал файл `functions-lilo.php`, так как он не используется и у меня без него все работает.
