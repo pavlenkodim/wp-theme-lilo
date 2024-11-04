@@ -70,6 +70,8 @@ $(document).ready(function () {
         $(".logo__wrapper-unstable").css({ opacity: 1 });
         break;
     }
+    chengeTitle(+activeSlide.attributes["data-slide"].value);
+    LazyLoadVideo(+activeSlide.attributes["data-slide"].value);
   }
   hideHeader();
 
@@ -100,8 +102,6 @@ $(document).ready(function () {
         }, 500);
         break;
     }
-    chengeTitle(+activeSlide.attributes["data-slide"].value);
-    LazyLoadVideo(+activeSlide.attributes["data-slide"].value);
   }
   changeSlide();
 
