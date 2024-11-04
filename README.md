@@ -2,10 +2,38 @@
 
 ## Для того чтобы установить это страницу в вашу тему Foxdigital, вам нужно:
 
-1. Скопировать содержимое этого репозитория в корневую папку вашей темы.
-2. В Административной панели Wordpress установить создать страницу с названием "Lilo" и выбрать шаблон "Lilo".
-3. Запустить сайт и проверить работоспособность страницы.
+1. Склонировать с этого репозитория ветку `page` командой
+
+```bash
+git clone -b page https://github.com/pavlenkodim/wp-theme-lilo.git
+```
+
+У вас появится папка `wp-theme-lilo`.
+
+2. Скопировать содержимое папки `wp-theme-lilo` в корневую папку вашей темы.
+3. В Административной панели Wordpress установить создать страницу с названием "Lilo" и выбрать шаблон "Lilo".
+4. Запустить сайт и проверить работоспособность страницы.
 
 **(!) Не забудьте удалить этот `README.md`, `.gitignore` и папку `.git` после установки**
 
-PS. Я не создавал файл `functions-lilo.php`, так как он не используется и у меня без него все работает.
+> PS. Если вы используете эту страницу без темы Foxdigital, то вам нужно будет в ручную настроить пути для загрузки некоторых скриптов. Все необходимые скрипты и другие файлы находятся в папке `lilo/js`, `lilo/css` и `lilo/img`.
+
+# LILO - WordPress page for Foxdigital theme
+
+## To install this page in your Foxdigital theme, you need to:
+
+1. Clone the `page` branch from this repository using the command
+
+```bash
+git clone -b page https://github.com/pavlenkodim/wp-theme-lilo.git
+```
+
+You will have a folder named `wp-theme-lilo`.
+
+2. Copy the contents of the `wp-theme-lilo` folder to the root folder of your theme.
+3. In the WordPress Admin panel, create a page titled "Lilo" and select the "Lilo" template.
+4. Launch the site and check the functionality of the page.
+
+**(!) Don't forget to delete this `README.md`, `.gitignore`, and the `.git` folder after installation**
+
+> PS. If you are using this page without the Foxdigital theme, you will need to manually configure the paths for loading some scripts. All necessary scripts and other files are located in the `lilo/js`, `lilo/css`, and `lilo/img` folders.
