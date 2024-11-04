@@ -50,7 +50,7 @@ function init() {
   let textureLoader = new THREE.TextureLoader();
   textureLoader.crossOrigin = "Anonymous";
   let smokeTexture = textureLoader.load(
-    "/wp-content/themes/wp-theme-lilo/img/Smoke-Element.png"
+    "/wp-content/themes/foxdigital/lilo/img/Smoke-Element.png"
   );
 
   let smokeGeo = new THREE.PlaneGeometry(500, 500);
