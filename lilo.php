@@ -243,7 +243,7 @@ Template Post Type: page
             <p>Благодаря продвинутым возможностям таргетирования и органическому росту целевой аудитории, реклама будет показана <b>заинтересованным пользователям</b></p>
           </div>
         </div>
-        <img class="bg-blure-container section-5-card-3" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg/dust purp-bg-2.png" alt="">
+        <img class="bg-blure-container section-5-card-3" src="<?php echo get_stylesheet_directory_uri(); ?>/lilo/img/bg/dust purp-bg-2.png" alt="">
       </div>
       <img class="girl__6" src="<?php echo get_stylesheet_directory_uri(); ?>/lilo/img/girl_6.png" alt="">
       <div class="background">
